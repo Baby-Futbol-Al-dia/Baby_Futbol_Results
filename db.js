@@ -34024,6 +34024,239 @@ const ZONA_8_DB = {
           ],
           categorias: [
             {
+              id: "2021",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                //fecha 6 clausura
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: 0, gv: 6 },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
               id: "2020",
               fechas: [
                 {
@@ -34255,6 +34488,2097 @@ const ZONA_8_DB = {
                 },
               ],
             },
+            {
+              id: "2019",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                //fecha 1 clausura
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: 2, gv: 0 },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                //fecha 6
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: 6, gv: 0 },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                //fecha 7
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: 3, gv: 1 },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2018",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2017",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2016",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2015",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2014",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2013",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "sub-11 fem",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "sub-13 fem",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "Niágara", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Royal", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Royal", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Siete Estrellas", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Niágara", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    { local: "Santa Ana", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Royal", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Fecha Libre", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    { local: "Fecha Libre", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Cohami", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Royal", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Santa Ana", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    { local: "Marconi", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Royal", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    { local: "Royal", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
+
+
+
+
+
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    { local: "Fabián Perea", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "La Tentación", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Siete Estrellas", gl: null, gv: null },
+                    { local: "Royal", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Fabián Perea", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Niágara", visitante: "Juventud Unida", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    { local: "Cohami", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Marconi", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Carlitos Prado", visitante: "Juventud Unida", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Royal", visitante: "Marconi", gl: null, gv: null },
+
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    { local: "Niágara", visitante: "Carlitos Prado", gl: null, gv: null },
+                    { local: "Siete Estrellas", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Santa Ana", visitante: "Fecha Libre", gl: null, gv: null },
+                    { local: "Juventud Unida", visitante: "Ciclón del Cerrito", gl: null, gv: null },
+                    { local: "Marconi", visitante: "Cohami", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Royal", gl: null, gv: null },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    { local: "Carlitos Prado", visitante: "Santa Ana", gl: null, gv: null },
+                    { local: "Fecha Libre", visitante: "La Tentación", gl: null, gv: null },
+                    { local: "Ciclón del Cerrito", visitante: "Niágara", gl: null, gv: null },
+                    { local: "Fabián Perea", visitante: "Marconi", gl: null, gv: null },
+                  ],
+                },
+              ],
+            },
+            
           ],
         },
       ],
