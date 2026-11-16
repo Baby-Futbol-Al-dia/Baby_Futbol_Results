@@ -532,3 +532,22 @@ li {
   color: #334155;
   font-weight: 600;
 }
+
+
+
+
+.pie-pagina {
+  margin: 30px auto 0;
+  padding: 14px 8px 0;
+  max-width: 760px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #64748b;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pie-pagina a {
+  color: #0d47a1;
+  font-weight: 600;
+}
