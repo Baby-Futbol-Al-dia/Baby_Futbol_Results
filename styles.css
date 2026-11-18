@@ -534,7 +534,20 @@ li {
 }
 
 
+/* ==========================================
+   LINK "CAMBIAR DE ZONA" Y PIE DE PÁGINA
+   ========================================== */
+.link-cambiar-zona {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #0d47a1;
+  text-decoration: none;
+}
 
+.link-cambiar-zona:hover {
+  text-decoration: underline;
+}
 
 .pie-pagina {
   margin: 30px auto 0;

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Fútbol al Día</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<div class="header-container">
+  
+  <!-- Agrupamos los títulos para que se mantengan juntos a la izquierda -->
+  <div class="header-titulos">
+    <div class="header-principal">
+      <img class="logo-header" src="perfil_babyfutbol.jpg" alt="Baby Fútbol">
+      <h1>Baby Fútbol al Día</h1>
+    </div>
+    <h2 id="subtitulo-zona">Ligas ONFI</h2>
+    <a class="link-cambiar-zona" href="index.html?elegir=1">← Cambiar de zona</a>
+  </div>
+
+  <!-- Contenedor de los escudos alineado a la derecha -->
+  <div class="escudos-ligas-container" id="escudos-ligas"></div>
+
+</div>
+
+
+    <!-- Filtros de Liga, Serie y Categoría -->
+    <div class="panel-filtros">
+      <div>
+        <label for="select-liga">Liga:</label>
+        <select id="select-liga" onchange="cambiarLiga()">
+          <!-- Se llena dinámicamente con JS -->
+        </select>
+      </div>
+
+      <div>
+        <label for="select-serie">Serie:</label>
+        <select id="select-serie" onchange="cambiarSerie()">
+          <!-- Se llena dinámicamente con JS -->
+        </select>
+      </div>
+
+      <div>
+        <label for="select-categoria">Categoría:</label>
+        <select id="select-categoria" onchange="actualizarVista()">
+          <!-- Se llena dinámicamente con JS -->
+        </select>
+      </div>
+    </div>
+
+    <!-- Vista de Equipos de la Liga/Serie/Categoría elegida -->
+    <div class="contenedor-clubes">
+      <h2 id="titulo-liga">Cargando...</h2>
+      <ul id="lista-clubes"></ul>
+    </div>
+<br><br>
+<select id="select-torneo">
+  <option value="apertura">Apertura</option>
+  <option value="clausura">Clausura</option>
+  <option value="anual" selected>Tabla Anual</option>
+</select>
+<section id="seccion-fechas">
+  <h2>Fechas Disputadas</h2>
+  <div id="contenedor-fechas"></div>
+</section>
+    <!-- Tabla de Posiciones -->
+    <div class="contenedor-tabla">
+      <h3>Tabla de Posiciones</h3>
+      <table class="tabla-posiciones">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Equipo</th>
+            <th>Pts</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>GF</th>
+            <th>GC</th>
+            <th>DIF</th>
+            <th>QUITAS</th> <!-- NUEVA COLUMNA -->
+          </tr>
+        </thead>
+        <tbody id="body-tabla-posiciones">
+          <!-- Generado dinámicamente -->
+        </tbody>
+      </table>
+      <!-- 👇 NUEVO: Espacio donde se mostrará la fecha de actualización -->
+      <div id="info-ultima-actualizacion" style="text-align: right; margin-top: 10px; font-size: 0.85rem; color: #64748b;"></div>
+    </div>
+    <footer class="pie-pagina">
+      Información no oficial, armada con datos publicados por las ligas y por colaboradores.
+      Puede tener errores: ayudanos a corregirlos por DM en
+      <a href="https://www.instagram.com/baby_futbol_al_dia/" target="_blank" rel="noopener">@baby_futbol_al_dia</a>.
+    </footer>
+
+    <!-- Carga de scripts: primero los datos de la zona elegida (?zona=N), después la app -->
+    <script src="zonas.js"></script>
+    <script>
+      (function () {
+        var id = parseInt(new URLSearchParams(location.search).get("zona"), 10);
+        var z = (window.ZONAS || []).find(function (x) { return x.id === id && x.estado === "activa"; });
+        if (!z) { location.replace("index.html?elegir=1" + (id ? "&sinzona=" + id : "")); return; }
+        try { localStorage.setItem("zonaElegida", String(id)); } catch (e) {}
+
+        function cargar(src) {
+          return new Promise(function (ok, fallo) {
+            var s = document.createElement("script");
+            s.src = src; s.async = false; s.onload = ok;
+            s.onerror = function () { fallo(src); };
+            document.body.appendChild(s);
+          });
+        }
+        cargar(z.datos)
+          .then(function () {
+            // el archivo de datos declara "const ZONA_N_DB = {...}"; lo tomamos por su nombre
+            window.ZONA_DB = (0, eval)(z.variable);
+            return cargar(z.escudos);
+          })
+          .then(function () { return cargar("app.js"); })
+          .catch(function (src) {
+            document.getElementById("titulo-liga").textContent =
+              "No se pudo cargar " + src + ". Probá recargar la página.";
+          });
+      })();
+    </script>
+  </body>
+</html>

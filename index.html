@@ -3,112 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baby Fútbol ONFI - Zona 8</title>
+    <title>Baby Fútbol al Día - Elegí tu zona</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="portada.css" />
   </head>
   <body>
-<div class="header-container">
-  
-  <!-- Agrupamos los títulos para que se mantengan juntos a la izquierda -->
-  <div class="header-titulos">
-    <div class="header-principal">
-      <img class="logo-header" src="perfil_babyfutbol.jpg" alt="Baby Fútbol">
+    <div class="portada-header">
+      <img src="perfil_babyfutbol.jpg" alt="Baby Fútbol al Día" />
       <h1>Baby Fútbol al Día</h1>
-    </div>
-    <h2>Ligas Zona 8 - ONFI</h2>
-  </div>
-
-  <!-- Contenedor de los escudos alineado a la derecha -->
-  <div class="escudos-ligas-container">
-<!--     <img src="data/escudos/liga_palermo1.jpg" alt=""> -->
-    <img src="data/escudos/liga palermo 2.png" alt="">
-    <img src="data/escudos/liga_prado.jpg" alt="">
-    <img src="data/escudos/liga paso molino.png" alt="">
-    <img src="data/escudos/liga_piedrasblancas1.jpg" alt="">
-    <img src="data/escudos/liga_uruguaya1.jpg" alt="">
-  </div>
-
-</div>
-
-
-    <!-- Filtros de Liga, Serie y Categoría -->
-    <div class="panel-filtros">
-      <div>
-        <label for="select-liga">Liga:</label>
-        <select id="select-liga" onchange="cambiarLiga()">
-          <!-- Se llena dinámicamente con JS -->
-        </select>
-      </div>
-
-      <div>
-        <label for="select-serie">Serie:</label>
-        <select id="select-serie" onchange="cambiarSerie()">
-          <!-- Se llena dinámicamente con JS -->
-        </select>
-      </div>
-
-      <div>
-        <label for="select-categoria">Categoría:</label>
-        <select id="select-categoria" onchange="actualizarVista()">
-          <!-- Se llena dinámicamente con JS -->
-        </select>
-      </div>
+      <p>Elegí tu zona de ONFI</p>
     </div>
 
-    <!-- Vista de Equipos de la Liga/Serie/Categoría elegida -->
-    <div class="contenedor-clubes">
-      <h2 id="titulo-liga">Cargando...</h2>
-      <ul id="lista-clubes"></ul>
-    </div>
-<br><br>
-<select id="select-torneo">
-  <option value="apertura">Apertura</option>
-  <option value="clausura">Clausura</option>
-  <option value="anual" selected>Tabla Anual</option>
-</select>
-<section id="seccion-fechas">
-  <h2>Fechas Disputadas</h2>
-  <div id="contenedor-fechas"></div>
-</section>
-    <!-- Tabla de Posiciones -->
-    <div class="contenedor-tabla">
-      <h3>Tabla de Posiciones</h3>
-      <table class="tabla-posiciones">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Equipo</th>
-            <th>Pts</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
-            <th>GF</th>
-            <th>GC</th>
-            <th>DIF</th>
-            <th>QUITAS</th> <!-- NUEVA COLUMNA -->
-          </tr>
-        </thead>
-        <tbody id="body-tabla-posiciones">
-          <!-- Generado dinámicamente -->
-        </tbody>
-      </table>
-      <!-- 👇 NUEVO: Espacio donde se mostrará la fecha de actualización -->
-      <div id="info-ultima-actualizacion" style="text-align: right; margin-top: 10px; font-size: 0.85rem; color: #64748b;"></div>
-    </div>
+    <div id="aviso" class="aviso-zona" style="display:none"></div>
+    <div id="zonas" class="zonas-grid"></div>
+
     <footer class="pie-pagina">
       Información no oficial, armada con datos publicados por las ligas y por colaboradores.
       Puede tener errores: ayudanos a corregirlos por DM en
       <a href="https://www.instagram.com/baby_futbol_al_dia/" target="_blank" rel="noopener">@baby_futbol_al_dia</a>.
     </footer>
-    <br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
 
-    <!-- Carga de scripts -->
-    <script src="data/fixture_y_resultados/2026/zona-8.js></script>
-    <script src="app.js"></script>
+    <script src="zonas.js"></script>
+    <script>
+      (function () {
+        var params = new URLSearchParams(location.search);
+        var zonas = window.ZONAS || [];
+        var activa = function (id) {
+          return zonas.find(function (z) { return z.id === id && z.estado === "activa"; });
+        };
+
+        // Link directo: index.html?zona=8
+        var pedida = parseInt(params.get("zona"), 10);
+        if (activa(pedida)) { location.replace("zona.html?zona=" + pedida); return; }
+
+        // Visitantes que ya eligieron una zona entran directo (salvo que pidan cambiar de zona)
+        if (!params.has("elegir")) {
+          try {
+            var guardada = parseInt(localStorage.getItem("zonaElegida"), 10);
+            if (activa(guardada)) { location.replace("zona.html?zona=" + guardada); return; }
+          } catch (e) {}
+        }
+
+        var sin = parseInt(params.get("sinzona"), 10);
+        if (sin) {
+          var aviso = document.getElementById("aviso");
+          aviso.textContent = "La Zona " + sin + " todavía no está disponible. Elegí una de las zonas habilitadas.";
+          aviso.style.display = "block";
+        }
+
+        var IG = "https://www.instagram.com/baby_futbol_al_dia/";
+        var esc = function (t) {
+          return String(t).replace(/[&<>"]/g, function (c) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+          });
+        };
+        // primero las zonas habilitadas, después las próximas
+        var orden = zonas.slice().sort(function (a, b) {
+          return (a.estado === "activa" ? 0 : 1) - (b.estado === "activa" ? 0 : 1) || a.id - b.id;
+        });
+        document.getElementById("zonas").innerHTML = orden.map(function (z) {
+          if (z.estado === "activa") {
+            var base = "zona.html?zona=" + z.id;
+            // la tarjeta NO es un link entero: adentro hay un link por liga y un botón "Entrar"
+            return '<div class="zona-card activa">' +
+              "<h2>" + esc(z.nombre) + "</h2>" +
+              '<ul class="ligas">' + (z.ligas || []).map(function (l) {
+                var liga = typeof l === "string" ? { nombre: l } : l;
+                var href = liga.id ? base + "&liga=" + encodeURIComponent(liga.id) : base;
+                return '<li><a href="' + href + '">' + esc(liga.nombre) + "</a></li>";
+              }).join("") + "</ul>" +
+              '</div>';
+          }
+          return '<div class="zona-card pronto"><h2>' + esc(z.nombre) + "</h2>" +
+            '<span class="etiqueta">Próximamente</span>' +
+            '<p class="ayuda">¿Sos de esta zona? <a href="' + IG + '" target="_blank" rel="noopener">Ayudanos a armarla por DM</a></p></div>';
+        }).join("");
+      })();
+    </script>
   </body>
 </html>
