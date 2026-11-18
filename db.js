@@ -3,10 +3,8 @@
 const ZONA_8_DB = {
   zona: "Zona 8",
   ligas: [
-    
-
-    //Ligas al dia, a la fecha 30/10 de aca para abajo
-     // Paso Molino
+    //Ligas al dia, a la fecha 16/11 de aca para abajo
+    // Paso Molino
     {
       id: "paso-molino",
       nombre: "Liga Paso Molino",
@@ -29,7 +27,7 @@ const ZONA_8_DB = {
             "Sauce",
             "Cerromar",
           ],
-            categorias: [
+          categorias: [
             //2021
             {
               id: "2021",
@@ -89,7 +87,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Olimpo Jrs", visitante: "Estrella Federal", gl: 8, gv: 2 },
                     { local: "Zorzal", visitante: "Universal", gl: 2, gv: 0 },
-                    { local: "Holanda", visitante: "Cerromar", gl: 2, gv: 0 }, 
+                    { local: "Holanda", visitante: "Cerromar", gl: 2, gv: 0 },
                     { local: "Nuevo Juventud", visitante: "Santa Catalina", gl: 0, gv: 2 },
                     { local: "Independiente Lezica", visitante: "Sauce", gl: 4, gv: 1 },
                   ],
@@ -2504,7 +2502,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Naranja Mecánica", visitante: "Tigre", gl: 0, gv: 2 },
                     { local: "Brandi", visitante: "Pesca", gl: 2, gv: 0 },
-                    { local: "Los Bulevares", visitante: "Papotes", gl: 0, gv: 2 }, 
+                    { local: "Los Bulevares", visitante: "Papotes", gl: 0, gv: 2 },
                     { local: "Cerro Jrs", visitante: "Los Magos", gl: 2, gv: 1 },
                   ],
                 },
@@ -13226,11 +13224,11 @@ const ZONA_8_DB = {
                 {
                   num: 1,
                   partidos: [
-                    { 
-                      local: "Urunday", 
-                      visitante: "Poco Sitio", 
-                      gl: 1, 
-                      gv: 3 
+                    {
+                      local: "Urunday",
+                      visitante: "Poco Sitio",
+                      gl: 1,
+                      gv: 3,
                     },
                     {
                       local: "Enrique López",
@@ -23285,11 +23283,11 @@ const ZONA_8_DB = {
                       gl: null,
                       gv: null,
                     },
-                    { 
-                      local: "Aebu", 
-                      visitante: "Dryco", 
-                      gl: 0, 
-                      gv: 2 
+                    {
+                      local: "Aebu",
+                      visitante: "Dryco",
+                      gl: 0,
+                      gv: 2,
                     },
                     {
                       local: "Est. de la Unión",
@@ -24570,11 +24568,11 @@ const ZONA_8_DB = {
                       gl: 2,
                       gv: 0,
                     },
-                    { 
-                      local: "Aebu", 
-                      visitante: "Dryco", 
-                      gl: 0, 
-                      gv: 2 
+                    {
+                      local: "Aebu",
+                      visitante: "Dryco",
+                      gl: 0,
+                      gv: 2,
                     },
                     {
                       local: "Est. de la Unión",
@@ -32222,11 +32220,7 @@ const ZONA_8_DB = {
                       gl: 8,
                       gv: 0,
                     },
-                    { local: "Aebu", 
-                      visitante: "Dryco", 
-                      gl: 2, 
-                      gv: 1 
-                    },
+                    { local: "Aebu", visitante: "Dryco", gl: 2, gv: 1 },
                     {
                       local: "Est. de la Unión",
                       visitante: "Nuevo América",
@@ -32303,11 +32297,11 @@ const ZONA_8_DB = {
                       gl: 3,
                       gv: 1,
                     },
-                    { 
-                      local: "Aebu", 
-                      visitante: "Sur2000", 
+                    {
+                      local: "Aebu",
+                      visitante: "Sur2000",
                       gl: 3,
-                      gv: 5 
+                      gv: 5,
                     },
                     {
                       local: "Est. de la Unión",
@@ -33997,7 +33991,7 @@ const ZONA_8_DB = {
         },
       ],
     },
-   
+
     //Uruguaya
     {
       id: "uruguaya",
@@ -34035,7 +34029,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34109,7 +34102,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -34146,7 +34139,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34162,7 +34154,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -34185,11 +34177,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 //fecha 6 clausura
@@ -34231,7 +34218,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34268,7 +34254,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34342,7 +34327,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -34379,7 +34364,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34395,7 +34379,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -34418,11 +34402,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -34463,7 +34442,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34500,7 +34478,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34574,7 +34551,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -34612,7 +34589,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34628,7 +34604,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -34651,11 +34627,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: 2, gv: 0 },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 //fecha 6
@@ -34697,7 +34668,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34734,7 +34704,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34808,7 +34777,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -34845,7 +34814,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34861,7 +34829,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -34884,11 +34852,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -34929,7 +34892,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -34966,7 +34928,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35040,7 +35001,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -35077,7 +35038,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35093,7 +35053,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -35116,11 +35076,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -35161,7 +35116,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35198,7 +35152,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35272,7 +35225,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -35309,7 +35262,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35325,7 +35277,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -35348,11 +35300,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -35393,7 +35340,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35430,7 +35376,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35504,7 +35449,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -35541,7 +35486,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35557,7 +35501,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -35580,11 +35524,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -35625,7 +35564,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35662,7 +35600,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35736,7 +35673,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -35773,7 +35710,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35789,7 +35725,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -35812,11 +35748,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -35857,7 +35788,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35894,7 +35824,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -35968,7 +35897,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -36005,7 +35934,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36021,7 +35949,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -36044,11 +35972,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -36089,7 +36012,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36126,7 +36048,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36200,7 +36121,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -36237,7 +36158,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36253,7 +36173,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -36276,11 +36196,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -36321,7 +36236,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36358,7 +36272,6 @@ const ZONA_8_DB = {
                     { local: "La Tentación", visitante: "Cohami", gl: null, gv: null },
                     { local: "Fabián Perea", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Royal", visitante: "Niágara", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36432,7 +36345,7 @@ const ZONA_8_DB = {
                 {
                   num: 9,
                   partidos: [
-                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },                    
+                    { local: "Siete Estrellas", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Juventud Unida", visitante: "Carlitos Prado", gl: null, gv: null },
                     { local: "Niágara", visitante: "Santa Ana", gl: null, gv: null },
                     { local: "Cohami", visitante: "Ciclón del Cerrito", gl: null, gv: null },
@@ -36469,7 +36382,6 @@ const ZONA_8_DB = {
                     { local: "Juventud Unida", visitante: "Marconi", gl: null, gv: null },
                     { local: "Siete Estrellas", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "Royal", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36485,7 +36397,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Ciclón del Cerrito", visitante: "Fecha Libre", gl: null, gv: null },
                     { local: "Royal", visitante: "Carlitos Prado", gl: null, gv: null },
-                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },                                      
+                    { local: "Juventud Unida", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Niágara", visitante: "La Tentación", gl: null, gv: null },
                     { local: "Cohami", visitante: "Siete Estrellas", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Marconi", gl: null, gv: null },
@@ -36508,11 +36420,6 @@ const ZONA_8_DB = {
                     { local: "Siete Estrellas", visitante: "Niágara", gl: null, gv: null },
                     { local: "Santa Ana", visitante: "Fabián Perea", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Marconi", gl: null, gv: null },
-
-
-
-
-
                   ],
                 },
                 {
@@ -36553,7 +36460,6 @@ const ZONA_8_DB = {
                     { local: "Santa Ana", visitante: "Niágara", gl: null, gv: null },
                     { local: "Ciclón del Cerrito", visitante: "Cohami", gl: null, gv: null },
                     { local: "Royal", visitante: "Marconi", gl: null, gv: null },
-
                   ],
                 },
                 {
@@ -36578,7 +36484,6 @@ const ZONA_8_DB = {
                 },
               ],
             },
-            
           ],
         },
       ],
@@ -37408,7 +37313,6 @@ const ZONA_8_DB = {
                       gl: null,
                       gv: null,
                     },
-                    
                   ],
                 },
                 {
@@ -45384,7 +45288,6 @@ const ZONA_8_DB = {
                       gl: null,
                       gv: null,
                     },
-
                   ],
                 },
                 {
@@ -50427,7 +50330,7 @@ const ZONA_8_DB = {
                     },
                   ],
                 },
-                //fecha 2 
+                //fecha 2
                 {
                   num: 2,
                   partidos: [
