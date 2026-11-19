@@ -14280,8 +14280,8 @@ const ZONA_8_DB = {
                     {
                       local: "Unión Vecinal",
                       visitante: "La Escalinata",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 3,
                     },
                     {
                       local: "Rayo Rojo",
@@ -15390,8 +15390,8 @@ const ZONA_8_DB = {
                     {
                       local: "Unión Vecinal",
                       visitante: "La Escalinata",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 4,
                     },
                     {
                       local: "Rayo Rojo",
@@ -17510,8 +17510,8 @@ const ZONA_8_DB = {
                     {
                       local: "Maeso",
                       visitante: "Unión Vecinal",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 1,
                     },
                     {
                       local: "Est. del Sur",
@@ -18620,8 +18620,8 @@ const ZONA_8_DB = {
                     {
                       local: "Maeso",
                       visitante: "Unión Vecinal",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 3,
                     },
                     {
                       local: "Est. del Sur",
@@ -20911,8 +20911,8 @@ const ZONA_8_DB = {
                     {
                       local: "La Rinconada",
                       visitante: "Euskal Erria",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 1,
                     },
                   ],
                 },
@@ -52375,8 +52375,8 @@ const ZONA_8_DB = {
                     {
                       local: "Estrella del Norte",
                       visitante: "Ombú Jrs.",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 1,
                     },
                   ],
                 },
@@ -53147,8 +53147,8 @@ const ZONA_8_DB = {
                     {
                       local: "Estrella del Norte",
                       visitante: "Pablan",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 1,
                     },
                     {
                       local: "Malvín Alto",

@@ -19,9 +19,9 @@ window.ZONA_EXTRAS = {
 
     "River Plate": "data/escudos/riverplate_minas.jpg",
     "Parroquia": "data/escudos/parroquia.jpg",
-    "Safa": "data/escudos/safa.png",
-    "Cerrito": "data/escudos/cerrito.png",
-    "Libertad": "data/escudos/libertad.png",
+    "Safa": "data/escudos/safa.jpg",
+    "Cerrito": "data/escudos/cerrito.jpg",
+    "Libertad": "data/escudos/libertad_minas.jpg",
     "Centro Barrio N°2": "data/escudos/centrobarrio2.jpg",
     "Sportivo Minas": "data/escudos/sportivominas.jpg",
   },

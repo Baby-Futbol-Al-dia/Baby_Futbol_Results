@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baby Fútbol al Día</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .barra-temporada { margin-top: 8px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+      .barra-temporada select { padding: 4px 8px; font-size: 0.9rem; }
+      .aviso-temporada {
+        margin-top: 8px; padding: 8px 12px; border-radius: 8px; max-width: 520px;
+        background: #fff7ed; border: 1px solid #fdba74; color: #9a3412; font-size: 0.88rem;
+      }
+    </style>
   </head>
   <body>
 <div class="header-container">
@@ -17,6 +25,11 @@
     </div>
     <h2 id="subtitulo-zona">Ligas ONFI</h2>
     <a class="link-cambiar-zona" href="index.html?elegir=1">← Cambiar de zona</a>
+    <div id="barra-temporada" class="barra-temporada" style="display:none">
+      <label for="select-temporada">Temporada:</label>
+      <select id="select-temporada"></select>
+    </div>
+    <div id="aviso-temporada" class="aviso-temporada" style="display:none"></div>
   </div>
 
   <!-- Contenedor de los escudos alineado a la derecha -->
@@ -96,15 +109,59 @@
       <a href="https://www.instagram.com/baby_futbol_al_dia/" target="_blank" rel="noopener">@baby_futbol_al_dia</a>.
     </footer>
 
-    <!-- Carga de scripts: primero los datos de la zona elegida (?zona=N), después la app -->
+    <!-- Carga de scripts: zona (?zona=N) y temporada (?temporada=AAAA), después la app -->
     <script src="zonas.js"></script>
     <script>
       (function () {
-        var id = parseInt(new URLSearchParams(location.search).get("zona"), 10);
+        var params = new URLSearchParams(location.search);
+        var id = parseInt(params.get("zona"), 10);
         var z = (window.ZONAS || []).find(function (x) { return x.id === id && x.estado === "activa"; });
         if (!z) { location.replace("index.html?elegir=1" + (id ? "&sinzona=" + id : "")); return; }
         try { localStorage.setItem("zonaElegida", String(id)); } catch (e) {}
 
+        // ---------- Temporada ----------
+        // actual = la que se abre por defecto. disponibles = años que esta zona tiene cargados (zonas.js).
+        var actual = window.TEMPORADA_ACTUAL || new Date().getFullYear();
+        var disponibles = (z.temporadas && z.temporadas.length ? z.temporadas.slice() : [actual])
+          .sort(function (a, b) { return b - a; });
+        var pedida = parseInt(params.get("temporada"), 10);
+        var temporada = disponibles.indexOf(pedida) !== -1
+          ? pedida
+          : (disponibles.indexOf(actual) !== -1 ? actual : disponibles[0]);
+
+        var aviso = "";
+        if (params.has("temporada") && temporada !== pedida) {
+          aviso = "No hay datos de la temporada " + params.get("temporada") + " para esta zona. Mostrando la " + temporada + ".";
+        } else if (temporada < actual) {
+          aviso = "Estás viendo la temporada " + temporada + " (finalizada).";
+        } else if (temporada > actual) {
+          aviso = "Temporada " + temporada + ": todavía en preparación.";
+        }
+        if (aviso) {
+          var caja = document.getElementById("aviso-temporada");
+          caja.textContent = aviso; caja.style.display = "block";
+        }
+
+        // selector (solo si la zona tiene más de una temporada)
+        if (disponibles.length > 1) {
+          var sel = document.getElementById("select-temporada");
+          sel.innerHTML = disponibles.map(function (t) {
+            return '<option value="' + t + '"' + (t === temporada ? " selected" : "") + ">" + t + "</option>";
+          }).join("");
+          document.getElementById("barra-temporada").style.display = "flex";
+          sel.addEventListener("change", function () {
+            // se conserva lo que se estaba mirando (si en la otra temporada no existe, la app lo ignora)
+            var p = new URLSearchParams();
+            p.set("zona", id); p.set("temporada", sel.value);
+            ["liga", "serie", "categoria", "torneo"].forEach(function (k) {
+              var s = document.getElementById("select-" + k);
+              if (s && s.value) p.set(k, s.value);
+            });
+            location.search = p.toString();
+          });
+        }
+
+        // ---------- Carga ----------
         function cargar(src) {
           return new Promise(function (ok, fallo) {
             var s = document.createElement("script");
@@ -113,13 +170,21 @@
             document.body.appendChild(s);
           });
         }
-        cargar(z.datos)
+        // en la ruta, {temporada} se reemplaza por el año:  data/fixture_y_resultados/{temporada}/zona-8.js
+        var rutaDatos = z.datos.replace("{temporada}", temporada);
+        var rutaEscudos = z.escudos.replace("{temporada}", temporada);
+
+        cargar(rutaDatos)
           .then(function () {
             // el archivo de datos declara "const ZONA_N_DB = {...}"; lo tomamos por su nombre
             window.ZONA_DB = (0, eval)(z.variable);
-            return cargar(z.escudos);
+            return cargar(rutaEscudos);
           })
           .then(function () { return cargar("app.js"); })
+          .then(function () {
+            var sub = document.getElementById("subtitulo-zona");
+            if (sub && disponibles.length > 1) sub.textContent += " · Temporada " + temporada;
+          })
           .catch(function (src) {
             document.getElementById("titulo-liga").textContent =
               "No se pudo cargar " + src + ". Probá recargar la página.";
