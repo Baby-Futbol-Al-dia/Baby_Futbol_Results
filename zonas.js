@@ -156,7 +156,7 @@ window.ZONAS = [
       { id: "piedras-blancas", nombre: "Liga Piedras Blancas" },
       { id: "uruguaya", nombre: "Liga Uruguaya" },
     ],
-    temporadas: [2026, 2025], // años que tiene cargados esta zona (el más nuevo primero)
+    temporadas: [2026, 2025, 2024, 2023], // años que tiene cargados esta zona (el más nuevo primero)
     datos: "data/fixture_y_resultados/{temporada}/zona-8.js",
     escudos: "data/zona-8-escudos.js",
     variable: "ZONA_8_DB",

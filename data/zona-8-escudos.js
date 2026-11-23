@@ -74,6 +74,10 @@ window.ZONA_EXTRAS = {
   "Don Bosco": "data/escudos/donbosco_4.webp",
   "Est. del Sur": "data/escudos/estrella_4.webp",
   "Unión Vecinal": "data/escudos/union_4.webp",
+  "Unión Vecinal CEL": "data/escudos/union_4.webp",
+  "Unión Vecinal AM": "data/escudos/union_4.webp",
+
+
 
   // --- LIGA PALERMO (SERIE B) ---
   "Intermezzo": "data/escudos/intermeso_4.webp",

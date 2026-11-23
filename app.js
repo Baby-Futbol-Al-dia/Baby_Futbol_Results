@@ -20,6 +20,16 @@ const CATEGORIAS_STANDARD = [
   { id: "2013", nombre: "2013" },
 ];
 
+// Lo que pide la URL (?liga=palermo&serie=...&categoria=...&torneo=...). Se usa una sola vez al cargar.
+let PREFERENCIA_URL = {};
+
+function elegirSiExiste(select, valor) {
+  if (!select || !valor) return false;
+  const existe = Array.from(select.options).some((o) => o.value === valor);
+  if (existe) select.value = valor;
+  return existe;
+}
+
 function inicializarApp() {
   const selectLiga = document.getElementById("select-liga");
   if (!selectLiga) return;
@@ -30,9 +40,33 @@ function inicializarApp() {
   if (subtitulo) subtitulo.textContent = "Ligas " + ZONA_DB.zona + " - ONFI";
   const contEscudosLigas = document.getElementById("escudos-ligas");
   if (contEscudosLigas && window.ZONA_EXTRAS && window.ZONA_EXTRAS.escudosLigas) {
+    // Cada escudo puede ser un texto (ruta de la imagen) o { src, liga } con el id de la liga.
+    // Si es solo texto, se asocia por orden con las ligas de esta zona en zonas.js.
+    const idZona = parseInt(new URLSearchParams(location.search).get("zona"), 10);
+    const zonaReg = (window.ZONAS || []).find((z) => z.id === idZona);
+    const ligasReg = zonaReg && zonaReg.ligas ? zonaReg.ligas : [];
+
     contEscudosLigas.innerHTML = window.ZONA_EXTRAS.escudosLigas
-      .map((src) => `<img src="${src}" alt="">`)
+      .map((item, i) => {
+        const src = typeof item === "string" ? item : item.src;
+        const reg = ligasReg[i];
+        const idLiga = typeof item === "string" ? (reg && reg.id) : item.liga;
+        const ligaDB = ZONA_DB.ligas.find((l) => l.id === idLiga);
+        // Si la liga todavía no está cargada en los datos (ej. otra temporada), el escudo queda sin link
+        if (!ligaDB) return `<img src="${src}" alt="">`;
+        return `<img src="${src}" alt="${ligaDB.nombre}" title="${ligaDB.nombre}" data-liga="${ligaDB.id}" style="cursor:pointer">`;
+      })
       .join("");
+
+    // Tocar un escudo = elegir esa liga en el selector
+    contEscudosLigas.addEventListener("click", (e) => {
+      const img = e.target.closest ? e.target.closest("img[data-liga]") : null;
+      if (!img) return;
+      const sel = document.getElementById("select-liga");
+      if (sel && elegirSiExiste(sel, img.getAttribute("data-liga"))) {
+        cambiarLiga();
+      }
+    });
   }
 
   selectLiga.innerHTML = "";
@@ -50,7 +84,20 @@ function inicializarApp() {
     selectTorneo.addEventListener("change", actualizarVista);
   }
 
+  // Leer qué liga/serie/categoría/torneo pide la URL
+  const params = new URLSearchParams(location.search);
+  PREFERENCIA_URL = {
+    serie: params.get("serie"),
+    categoria: params.get("categoria"),
+  };
+  if (!elegirSiExiste(selectLiga, params.get("liga"))) {
+    // liga inexistente: no aplicar serie ni categoría de otra liga
+    PREFERENCIA_URL = {};
+  }
+  elegirSiExiste(selectTorneo, params.get("torneo"));
+
   cambiarLiga();
+  PREFERENCIA_URL = {}; // a partir de acá manda lo que elija la persona
 }
 
 function cambiarLiga() {
@@ -69,6 +116,7 @@ function cambiarLiga() {
     });
   }
 
+  elegirSiExiste(selectSerie, PREFERENCIA_URL.serie);
   cambiarSerie();
 }
 
@@ -105,6 +153,7 @@ function cambiarSerie() {
     });
   }
 
+  elegirSiExiste(selectCat, PREFERENCIA_URL.categoria);
   actualizarVista();
 }
 
@@ -115,6 +164,13 @@ function obtenerLimiteApertura(serie) {
   if (!serie || !serie.clubes) return 0;
   const n = serie.clubes.length;
   return n % 2 === 0 ? n - 1 : n;
+}
+
+/**
+ * true si la serie es un torneo único (sin Apertura/Clausura): en los datos, serie.torneoUnico = true
+ */
+function esTorneoUnico(serie) {
+  return !!(serie && serie.torneoUnico);
 }
 
 /**
@@ -631,15 +687,24 @@ function actualizarVista() {
   const tituloH2 = document.getElementById("titulo-liga");
 
   const selectTorneo = document.getElementById("select-torneo");
-  const torneoActual = selectTorneo ? selectTorneo.value : "anual";
+
+  // Series de torneo único (sin Apertura/Clausura): serie.torneoUnico = true en los datos.
+  // Ahí se esconde el selector y se usa siempre el cálculo completo ("anual").
+  const unico = esTorneoUnico(serie);
+  if (selectTorneo) {
+    const cajaTorneo = document.getElementById("barra-torneo") || selectTorneo;
+    cajaTorneo.style.display = unico ? "none" : "";
+  }
+  const torneoActual = unico ? "anual" : selectTorneo ? selectTorneo.value : "anual";
   const nombreTorneo = obtenerNombreTorneo(torneoActual);
+  const sufijoTorneo = unico ? "" : ` - ${nombreTorneo}`;
 
   // Titulo dinamico según la categoría y el torneo seleccionado
   if (tituloH2) {
     const etiquetaCategoria =
       idCat === "general"
-        ? `Tabla General de Clubes - ${nombreTorneo}`
-        : `Cat ${idCat} - ${nombreTorneo}`;
+        ? `Tabla General de Clubes${sufijoTorneo}`
+        : `Cat ${idCat}${sufijoTorneo}`;
 
     tituloH2.textContent = `${liga.nombre} - ${serie ? serie.nombre : ""} (${etiquetaCategoria})`;
   }
