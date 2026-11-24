@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Generador de posts - Baby Fútbol al Día</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#17306f; --gold:#f8cf55; --bg:#f4f6fb; --ink:#1f2937; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Montserrat, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:var(--navy); color:#fff; padding:14px 22px; }
+  header h1 { margin:0; font-size:1.15rem; }
+  header p { margin:4px 0 0; font-size:.85rem; opacity:.85; }
+  main { max-width:1280px; margin:0 auto; padding:18px; }
+  .aviso-file { background:#fee2e2; border:1px solid #fca5a5; color:#991b1b; padding:10px 14px; border-radius:8px; margin-bottom:14px; display:none; }
+  .resumen { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:16px; }
+  .chip { background:#fff; border:2px solid #e5e7eb; border-radius:10px; padding:8px 12px; cursor:pointer; font-size:.85rem; }
+  .chip.sel { border-color:var(--navy); }
+  .chip b { display:block; font-size:.95rem; }
+  .grid { display:grid; grid-template-columns: 340px 1fr; gap:20px; align-items:start; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background:#fff; border-radius:12px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .panel h2 { margin:0 0 10px; font-size:1rem; }
+  label { display:block; font-size:.78rem; font-weight:700; margin:10px 0 3px; }
+  select, textarea, input[type=text] { width:100%; padding:7px 8px; font:inherit; font-size:.9rem; border:1px solid #cbd5e1; border-radius:6px; background:#fff; }
+  textarea { min-height:150px; resize:vertical; }
+  .fila-check { display:flex; gap:8px; align-items:center; margin-top:12px; font-size:.85rem; }
+  .fila-check input { width:auto; }
+  button { font:inherit; font-weight:700; border:0; border-radius:8px; padding:10px 14px; cursor:pointer; background:var(--navy); color:#fff; }
+  button.sec { background:#e5e7eb; color:var(--ink); }
+  .botones { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+  #estado-actual { margin-top:12px; padding:10px; border-radius:8px; font-size:.85rem; }
+  .verde { background:#dcfce7; color:#166534; } .amarillo { background:#fef9c3; color:#854d0e; }
+  .rojo { background:#fee2e2; color:#991b1b; } .gris { background:#e5e7eb; color:#374151; }
+  .vista { display:flex; flex-direction:column; gap:16px; }
+  #canvas-wrap { background:#d1d5db; padding:14px; border-radius:12px; text-align:center; }
+  canvas { max-width:100%; max-height:760px; width:auto; height:auto; box-shadow:0 4px 14px rgba(0,0,0,.25); background:#fff; }
+  table.estado { width:100%; border-collapse:collapse; font-size:.82rem; }
+  table.estado th, table.estado td { padding:6px 8px; border-bottom:1px solid #e5e7eb; text-align:left; }
+  table.estado th { background:#f1f5f9; position:sticky; top:0; }
+  .tabla-scroll { max-height:380px; overflow:auto; }
+  .pill { display:inline-block; padding:2px 9px; border-radius:999px; font-weight:700; font-size:.75rem; }
+  .ver { padding:4px 10px; font-size:.75rem; }
+  .mini { font-size:.78rem; color:#64748b; margin-top:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Generador de posts · Baby Fútbol al Día</h1>
+  <p>Armá la imagen de la tabla de cualquier liga, serie y categoría, y mirá qué resultados faltan antes de publicar.</p>
+</header>
+<main>
+  <div id="aviso-file" class="aviso-file">
+    Abriste el archivo directo (file://). Para poder descargar la imagen tenés que abrir esta página con el servidor
+    (Live Server): <b>http://127.0.0.1:5501/generador.html</b>
+  </div>
+
+  <div id="resumen" class="resumen"></div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>1. Elegí qué publicar</h2>
+      <label for="s-temporada">Temporada</label><select id="s-temporada"></select>
+      <label for="s-liga">Liga</label><select id="s-liga"></select>
+      <label for="s-serie">Serie</label><select id="s-serie"></select>
+      <label for="s-cat">Categoría</label><select id="s-cat"></select>
+      <div id="bloque-torneo">
+        <label for="s-torneo">Torneo</label>
+        <select id="s-torneo">
+          <option value="anual">Tabla Anual</option>
+          <option value="apertura">Apertura</option>
+          <option value="clausura">Clausura</option>
+        </select>
+      </div>
+      <label for="s-filas">Cuántos clubes mostrar</label>
+      <select id="s-filas">
+        <option value="5">Top 5</option>
+        <option value="6">Top 6</option>
+        <option value="8" selected>Top 8</option>
+        <option value="10">Top 10</option>
+        <option value="0">Todos</option>
+      </select>
+      <label for="s-formato">Formato</label>
+      <select id="s-formato">
+        <option value="1350">Post (1080 × 1350)</option>
+        <option value="1920">Historia (1080 × 1920)</option>
+      </select>
+      <div class="fila-check"><input type="checkbox" id="c-aviso" checked><label for="c-aviso" style="margin:0;font-weight:500">Si faltan resultados, avisarlo en la imagen y pedirlos por DM</label></div>
+      <div id="estado-actual" class="gris">—</div>
+      <div class="botones">
+        <button id="b-descargar">⬇ Descargar PNG</button>
+      </div>
+    </div>
+
+    <div class="vista">
+      <div id="canvas-wrap"><canvas id="lienzo" width="1080" height="1350"></canvas></div>
+
+      <div class="panel">
+        <h2>2. Texto sugerido para el post</h2>
+        <textarea id="caption"></textarea>
+        <div class="botones"><button class="sec" id="b-copiar">Copiar texto</button></div>
+        <label for="deeplink">Link directo a esta tabla (para el sticker de historias o WhatsApp)</label>
+        <input type="text" id="deeplink" readonly>
+        <div class="botones"><button class="sec" id="b-copiar-link">Copiar link</button></div>
+        <p class="mini">Los links dentro del texto de un post no se pueden tocar en Instagram: por eso el texto manda a la bio, y el link directo es para historias y grupos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:20px">
+    <h2>3. ¿Qué está listo para publicar? <span id="titulo-liga-estado" style="font-weight:500"></span></h2>
+    <p class="mini" style="margin:0 0 8px">"Hasta fecha" es la última fecha con algún resultado cargado. "Faltan" cuenta los partidos sin resultado dentro de las fechas hasta ahí (los libres no cuentan).
+      Verde = nada falta. Amarillo = faltan 1 a 3. Rojo = faltan más de 3.</p>
+    <div class="tabla-scroll">
+      <table class="estado" id="tabla-estado">
+        <thead><tr><th>Serie</th><th>Categoría</th><th>Hasta fecha</th><th>Cargados</th><th>Faltan</th><th>Estado</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script src="zonas.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // ============ Configuración ============
+  var BASE_WEB = "https://baby-futbol-al-dia.github.io/Baby_Futbol_Results/zona.html";
+  var WEB_CORTA = "baby-futbol-al-dia.github.io/Baby_Futbol_Results";
+  var CUENTA_IG = "@baby_futbol_al_dia";
+  var NAVY = "#17306f", GOLD1 = "#f8cf55", GOLD2 = "#e9a920";
+
+  if (location.protocol === "file:") document.getElementById("aviso-file").style.display = "block";
+
+  var params = new URLSearchParams(location.search);
+  var idZona = parseInt(params.get("zona"), 10) || 8;
+  var zona = (window.ZONAS || []).find(function (x) { return x.id === idZona && x.estado === "activa"; });
+  var $ = function (id) { return document.getElementById(id); };
+  if (!zona) { document.querySelector("main").innerHTML = "<p>Zona no disponible.</p>"; return; }
+
+  // ============ Temporada ============
+  var actual = window.TEMPORADA_ACTUAL || new Date().getFullYear();
+  var disponibles = (zona.temporadas && zona.temporadas.length ? zona.temporadas.slice() : [actual]).sort(function (a, b) { return b - a; });
+  var pedida = parseInt(params.get("temporada"), 10);
+  var temporada = disponibles.indexOf(pedida) !== -1 ? pedida : (disponibles.indexOf(actual) !== -1 ? actual : disponibles[0]);
+  $("s-temporada").innerHTML = disponibles.map(function (t) {
+    return '<option value="' + t + '"' + (t === temporada ? " selected" : "") + ">" + t + "</option>";
+  }).join("");
+  $("s-temporada").addEventListener("change", function () {
+    var p = new URLSearchParams();
+    p.set("zona", idZona); p.set("temporada", $("s-temporada").value);
+    location.search = p.toString();
+  });
+
+  // ============ Carga de datos (igual que zona.html) ============
+  function cargar(src) {
+    return new Promise(function (ok, fallo) {
+      var s = document.createElement("script");
+      s.src = src; s.async = false; s.onload = ok; s.onerror = function () { fallo(src); };
+      document.body.appendChild(s);
+    });
+  }
+  var rutaDatos = zona.datos.replace("{temporada}", temporada);
+  var rutaEscudos = zona.escudos.replace("{temporada}", temporada);
+  var DB, ESC = {};
+
+  cargar(rutaDatos).then(function () {
+    DB = (0, eval)(zona.variable);
+    DB.ligas = (DB.ligas || []).filter(function (l) { return l && l.id; });
+    return cargar(rutaEscudos);
+  }).then(function () {
+    ESC = (window.ZONA_EXTRAS && window.ZONA_EXTRAS.escudosClubes) || {};
+    iniciar();
+  }).catch(function (src) {
+    document.querySelector("main").innerHTML = "<p>No se pudo cargar " + src + ". Abrí esta página desde Live Server.</p>";
+  });
+
+  // ============ Lógica de tabla (copia fiel de app.js: mantener igual) ============
+  function limiteApertura(serie) {
+    var n = serie.clubes.length; return n % 2 === 0 ? n - 1 : n;
+  }
+  function calcularTabla(serie, idCat, puntosPG, torneo) {
+    puntosPG = puntosPG || 2; torneo = torneo || "anual";
+    var tabla = {};
+    serie.clubes.forEach(function (c) { tabla[c] = { nombre: c, pj: 0, pg: 0, pe: 0, pp: 0, gf: 0, gc: 0, dg: 0, pts: 0, ptsInf: 0 }; });
+    var lim = limiteApertura(serie);
+    var cats = idCat === "general" ? (serie.categorias || []) : (serie.categorias || []).filter(function (c) { return c.id === idCat; });
+    cats.forEach(function (cat) {
+      (cat.fechas || []).filter(function (f) {
+        if (torneo === "apertura") return f.num <= lim;
+        if (torneo === "clausura") return f.num > lim;
+        return true;
+      }).forEach(function (f) {
+        f.partidos.forEach(function (p) {
+          var l = tabla[p.local], v = tabla[p.visitante];
+          if (l && v && p.gl !== null && p.gv !== null && p.gl !== undefined && p.gv !== undefined) {
+            l.pj++; v.pj++; l.gf += p.gl; l.gc += p.gv; v.gf += p.gv; v.gc += p.gl;
+            if (p.gl > p.gv) { l.pg++; l.pts += puntosPG; v.pp++; }
+            else if (p.gl < p.gv) { v.pg++; v.pts += puntosPG; l.pp++; }
+            else { l.pe++; l.pts += 1; v.pe++; v.pts += 1; }
+            l.dg = l.gf - l.gc; v.dg = v.gf - v.gc;
+          }
+        });
+      });
+    });
+    cats.forEach(function (cat) {
+      var ds = [];
+      if (torneo === "apertura" && cat.sancionesApertura) ds.push(cat.sancionesApertura);
+      else if (torneo === "clausura" && cat.sancionesClausura) ds.push(cat.sancionesClausura);
+      else if (torneo === "anual") { if (cat.sancionesApertura) ds.push(cat.sancionesApertura); if (cat.sancionesClausura) ds.push(cat.sancionesClausura); }
+      ds.forEach(function (d) {
+        Object.keys(d).forEach(function (club) {
+          if (tabla[club]) { var pen = Math.abs(d[club]); tabla[club].pts -= pen; tabla[club].ptsInf += -pen; }
+        });
+      });
+    });
+    return Object.keys(tabla).map(function (k) { return tabla[k]; }).sort(function (a, b) {
+      if (b.pts !== a.pts) return b.pts - a.pts;
+      if (b.dg !== a.dg) return b.dg - a.dg;
+      return b.gf - a.gf;
+    });
+  }
+
+  // ============ Completitud de datos ============
+  function partidoValido(p) { return p && p.local && p.visitante && p.local !== "Fecha Libre" && p.visitante !== "Fecha Libre"; }
+  function tieneRes(p) { return p.gl !== null && p.gl !== undefined && p.gv !== null && p.gv !== undefined; }
+  function efTorneo(serie, torneo) { return serie.torneoUnico ? "anual" : torneo; }
+  function fechasDe(serie, cat, torneo) {
+    var lim = limiteApertura(serie), t = efTorneo(serie, torneo);
+    return (cat.fechas || []).filter(function (f) {
+      if (t === "apertura") return f.num <= lim;
+      if (t === "clausura") return f.num > lim;
+      return true;
+    });
+  }
+  function estadoCat(serie, cat, torneo) {
+    var fechas = fechasDe(serie, cat, torneo), ultima = 0;
+    fechas.forEach(function (f) { if ((f.partidos || []).some(function (p) { return partidoValido(p) && tieneRes(p); })) ultima = Math.max(ultima, f.num); });
+    var cargados = 0, faltan = 0;
+    fechas.forEach(function (f) {
+      if (f.num > ultima) return;
+      (f.partidos || []).forEach(function (p) { if (!partidoValido(p)) return; if (tieneRes(p)) cargados++; else faltan++; });
+    });
+    return { ultima: ultima, cargados: cargados, faltan: faltan };
+  }
+  function estadoGeneral(serie, torneo) {
+    var r = { ultima: 0, cargados: 0, faltan: 0 };
+    (serie.categorias || []).forEach(function (c) {
+      var e = estadoCat(serie, c, torneo); r.ultima = Math.max(r.ultima, e.ultima); r.cargados += e.cargados; r.faltan += e.faltan;
+    });
+    return r;
+  }
+  function estadoDe(serie, idCat, torneo) {
+    if (idCat === "general") return estadoGeneral(serie, torneo);
+    var c = (serie.categorias || []).find(function (x) { return x.id === idCat; });
+    return c ? estadoCat(serie, c, torneo) : { ultima: 0, cargados: 0, faltan: 0 };
+  }
+  function semaforo(e) {
+    if (e.cargados === 0) return { cls: "gris", txt: "Sin resultados" };
+    if (e.faltan === 0) return { cls: "verde", txt: "Listo" };
+    if (e.faltan <= 3) return { cls: "amarillo", txt: "Casi listo" };
+    return { cls: "rojo", txt: "Con huecos" };
+  }
+
+  // ============ Imágenes ============
+  var cacheImg = {};
+  function img(src) {
+    if (!src) return Promise.resolve(null);
+    if (cacheImg[src]) return cacheImg[src];
+    cacheImg[src] = new Promise(function (ok) {
+      var i = new Image(); i.onload = function () { ok(i); }; i.onerror = function () { ok(null); }; i.src = src;
+    });
+    return cacheImg[src];
+  }
+
+  // ============ Estado de la interfaz ============
+  var selLiga, selSerie, selCat, selTorneo;
+  function ligaActual() { return DB.ligas.find(function (l) { return l.id === selLiga.value; }); }
+  function serieActual() { var l = ligaActual(); return l && l.series ? l.series.find(function (s) { return s && s.id === selSerie.value; }) : null; }
+
+  function iniciar() {
+    selLiga = $("s-liga"); selSerie = $("s-serie"); selCat = $("s-cat"); selTorneo = $("s-torneo");
+    selLiga.innerHTML = DB.ligas.map(function (l) { return '<option value="' + l.id + '">' + l.nombre + "</option>"; }).join("");
+    var pl = params.get("liga");
+    if (pl && DB.ligas.some(function (l) { return l.id === pl; })) selLiga.value = pl;
+
+    selLiga.addEventListener("change", function () { llenarSeries(); });
+    selSerie.addEventListener("change", function () { llenarCats(); });
+    [selCat, selTorneo, $("s-filas"), $("s-formato"), $("c-aviso")].forEach(function (el) { el.addEventListener("change", dibujar); });
+    $("b-descargar").addEventListener("click", descargar);
+    $("b-copiar").addEventListener("click", function () { copiar($("caption")); });
+    $("b-copiar-link").addEventListener("click", function () { copiar($("deeplink")); });
+
+    armarResumen();
+    llenarSeries(params.get("serie"), params.get("categoria"));
+  }
+
+  function llenarSeries(preSerie, preCat) {
+    var l = ligaActual();
+    var series = (l && l.series ? l.series : []).filter(function (s) { return s && s.id; });
+    selSerie.innerHTML = series.map(function (s) { return '<option value="' + s.id + '">' + s.nombre + "</option>"; }).join("");
+    if (preSerie && series.some(function (s) { return s.id === preSerie; })) selSerie.value = preSerie;
+    llenarCats(preCat);
+    armarEstado();
+    marcarResumen();
+  }
+  function llenarCats(preCat) {
+    var s = serieActual();
+    var opts = '<option value="general">Tabla General (Acumulado)</option>';
+    if (s && s.categorias) opts += s.categorias.map(function (c) { return '<option value="' + c.id + '">Categoría ' + c.id + "</option>"; }).join("");
+    selCat.innerHTML = opts;
+    if (preCat && selCat.querySelector('option[value="' + preCat + '"]')) selCat.value = preCat;
+    else if (s && s.categorias && s.categorias.length) selCat.value = s.categorias[0].id; // por defecto la primera categoría
+    $("bloque-torneo").style.display = s && s.torneoUnico ? "none" : "";
+    dibujar();
+  }
+
+  // ============ Tablero (resumen por liga + tabla de estado) ============
+  function armarResumen() {
+    $("resumen").innerHTML = DB.ligas.map(function (l) {
+      var tot = 0, listas = 0, conDatos = 0;
+      (l.series || []).forEach(function (s) {
+        if (!s || !s.categorias) return;
+        s.categorias.forEach(function (c) {
+          tot++; var e = estadoCat(s, c, "anual");
+          if (e.cargados > 0) conDatos++;
+          if (e.cargados > 0 && e.faltan === 0) listas++;
+        });
+      });
+      return '<div class="chip" data-liga="' + l.id + '"><b>' + l.nombre + "</b>" + listas + " de " + tot + " categorías listas<br><span style='color:#64748b'>" + conDatos + " con resultados</span></div>";
+    }).join("");
+    Array.prototype.forEach.call($("resumen").children, function (el) {
+      el.addEventListener("click", function () { selLiga.value = el.getAttribute("data-liga"); llenarSeries(); });
+    });
+  }
+  function marcarResumen() {
+    Array.prototype.forEach.call($("resumen").children, function (el) {
+      el.classList.toggle("sel", el.getAttribute("data-liga") === selLiga.value);
+    });
+  }
+  function armarEstado() {
+    var l = ligaActual(), tb = $("tabla-estado").querySelector("tbody"), html = "";
+    $("titulo-liga-estado").textContent = l ? "· " + l.nombre : "";
+    (l && l.series ? l.series : []).forEach(function (s) {
+      if (!s || !s.categorias) return;
+      s.categorias.forEach(function (c) {
+        var e = estadoCat(s, c, selTorneo.value), sf = semaforo(e);
+        html += "<tr><td>" + s.nombre + "</td><td>" + c.id + "</td><td>" + (e.ultima || "—") + "</td><td>" + e.cargados + "</td><td>" + e.faltan + "</td>" +
+          '<td><span class="pill ' + sf.cls + '">' + sf.txt + "</span></td>" +
+          '<td><button class="ver sec" data-s="' + s.id + '" data-c="' + c.id + '">Ver</button></td></tr>';
+      });
+    });
+    tb.innerHTML = html || '<tr><td colspan="7">Esta liga no tiene categorías cargadas.</td></tr>';
+    Array.prototype.forEach.call(tb.querySelectorAll("button.ver"), function (b) {
+      b.addEventListener("click", function () {
+        selSerie.value = b.getAttribute("data-s"); llenarCats(b.getAttribute("data-c"));
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  }
+
+  // ============ Dibujo ============
+  function rr(ctx, x, y, w, h, r) {
+    ctx.beginPath(); ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y); ctx.closePath();
+  }
+  function fuente(ctx, peso, px) { ctx.font = peso + " " + px + "px Montserrat, Arial, sans-serif"; }
+  function ajustar(ctx, texto, maxW, peso, px, minPx) {
+    var s = px; fuente(ctx, peso, s);
+    while (ctx.measureText(texto).width > maxW && s > minPx) { s -= 1; fuente(ctx, peso, s); }
+    return s;
+  }
+  function encajar(ctx, im, x, y, w, h) {
+    var r = Math.min(w / im.width, h / im.height), dw = im.width * r, dh = im.height * r;
+    ctx.drawImage(im, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+  }
+
+  var dibujoId = 0;
+  function dibujar() {
+    var miId = ++dibujoId;
+    var l = ligaActual(), s = serieActual();
+    if (!l || !s) return;
+    armarEstado();
+    var idCat = selCat.value, torneo = efTorneo(s, selTorneo.value);
+    var filasSel = parseInt($("s-filas").value, 10);
+    var H = parseInt($("s-formato").value, 10), W = 1080;
+    var tabla = calcularTabla(s, idCat, l.puntosPG, torneo);
+    var st = estadoDe(s, idCat, torneo), sf = semaforo(st);
+    var hayQuita = tabla.some(function (r) { return r.ptsInf < 0; });
+
+    // estado + textos
+    var e = $("estado-actual");
+    e.className = sf.cls;
+    e.textContent = st.cargados === 0
+      ? "Sin resultados cargados todavía en esta categoría. No conviene publicarla."
+      : sf.txt + ": datos hasta la fecha " + st.ultima + (st.faltan ? " · faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") : " · no falta ninguno");
+
+    var mostrar = filasSel > 0 ? tabla.slice(0, filasSel) : tabla;
+    var nombreCat = idCat === "general" ? "TABLA GENERAL" : "CATEGORÍA " + idCat;
+    var nombreTorneo = s.torneoUnico ? "" : (torneo === "apertura" ? " · APERTURA" : torneo === "clausura" ? " · CLAUSURA" : " · TABLA ANUAL");
+    var bandaTxt = nombreCat + nombreTorneo + (temporada !== actual ? " · " + temporada : "");
+
+    // Cargar imágenes antes de dibujar
+    var promesas = [img("perfil_babyfutbol.jpg")].concat(mostrar.map(function (r) { return img(ESC[r.nombre]); }));
+    var fontsListas = (document.fonts && document.fonts.load) ? Promise.all([document.fonts.load("800 40px Montserrat"), document.fonts.load("700 40px Montserrat"), document.fonts.load("500 40px Montserrat")]).catch(function () {}) : Promise.resolve();
+
+    Promise.all([fontsListas].concat(promesas)).then(function (res) {
+      if (miId !== dibujoId) return; // llegó una selección más nueva
+      var logo = res[1], escudos = res.slice(2);
+      var cv = $("lienzo"); cv.width = W; cv.height = H;
+      var ctx = cv.getContext("2d");
+
+      // Fondo
+      var g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, GOLD1); g.addColorStop(1, GOLD2);
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+
+      // Cabecera
+      if (logo) {
+        ctx.save(); ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.closePath(); ctx.clip();
+        ctx.fillStyle = "#fff"; ctx.fillRect(50, 55, 140, 140); encajar(ctx, logo, 50, 55, 140, 140); ctx.restore();
+        ctx.lineWidth = 5; ctx.strokeStyle = NAVY; ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.stroke();
+      }
+      ctx.fillStyle = NAVY; ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+      fuente(ctx, 700, 26); ctx.fillText("BABY FÚTBOL AL DÍA", 220, 90);
+      var tp = ajustar(ctx, l.nombre.toUpperCase(), 820, 800, 60, 34); ctx.fillText(l.nombre.toUpperCase(), 220, 90 + 8 + tp);
+      var ty = 90 + 8 + tp + 14;
+      var ts = ajustar(ctx, s.nombre, 820, 700, 32, 20); ctx.fillText(s.nombre, 220, ty + ts);
+
+      // Banda de categoría
+      var by = 235;
+      ctx.fillStyle = NAVY; rr(ctx, 40, by, W - 80, 76, 14); ctx.fill();
+      ctx.fillStyle = "#fff"; ctx.textAlign = "center";
+      ajustar(ctx, bandaTxt, W - 140, 800, 36, 22); ctx.fillText(bandaTxt, W / 2, by + 50);
+
+      // Tarjeta de tabla
+      var footH = 250, cardY = by + 76 + 22, cardH = H - footH - 24 - cardY - 18, cardX = 40, cardW = W - 80;
+      ctx.fillStyle = "#fff"; rr(ctx, cardX, cardY, cardW, cardH, 18); ctx.fill();
+
+      // Encabezado de columnas
+      var hy = cardY + 14, hh = 56;
+      ctx.fillStyle = "#e8edf8"; rr(ctx, cardX + 14, hy, cardW - 28, hh, 10); ctx.fill();
+      var cols = ["PTS", "PJ", "PG", "PE", "PP", "DIF"], cw = 86, xDer = cardX + cardW - 28;
+      var xCols = cols.map(function (c, i) { return xDer - cw * (cols.length - i) + cw / 2; });
+      ctx.fillStyle = NAVY; fuente(ctx, 800, 24); ctx.textAlign = "center";
+      cols.forEach(function (c, i) { ctx.fillText(c, xCols[i], hy + 37); });
+      ctx.textAlign = "left"; ctx.fillText("#", cardX + 34, hy + 37); ctx.fillText("CLUB", cardX + 100, hy + 37);
+
+      // Filas
+      var notaH = 44, ry = hy + hh + 8, disp = cardY + cardH - notaH - ry;
+      var rowH = Math.min(100, Math.floor(disp / Math.max(mostrar.length, 1)));
+      var tam = Math.round(rowH * 0.62);
+      var xNombre = cardX + 100 + tam + 16, maxNombre = xCols[0] - cw / 2 - 14 - xNombre;
+      mostrar.forEach(function (r, i) {
+        var y = ry + i * rowH;
+        if (i === 0) { ctx.fillStyle = "#fff4cc"; rr(ctx, cardX + 14, y + 2, cardW - 28, rowH - 4, 10); ctx.fill(); }
+        else if (i % 2 === 1) { ctx.fillStyle = "#f4f6fb"; rr(ctx, cardX + 14, y + 2, cardW - 28, rowH - 4, 10); ctx.fill(); }
+        var cy = y + rowH / 2;
+        ctx.textBaseline = "middle"; ctx.textAlign = "center"; ctx.fillStyle = NAVY;
+        fuente(ctx, 800, Math.round(rowH * 0.36)); ctx.fillText(String(i + 1), cardX + 44, cy + 1);
+        var im = escudos[i];
+        if (im) encajar(ctx, im, cardX + 100, cy - tam / 2, tam, tam);
+        else { ctx.fillStyle = "#cbd5e1"; ctx.beginPath(); ctx.arc(cardX + 100 + tam / 2, cy, tam / 2.4, 0, Math.PI * 2); ctx.fill(); }
+        ctx.textAlign = "left"; ctx.fillStyle = "#111827";
+        var nombre = r.nombre + (r.ptsInf < 0 ? " *" : "");
+        ajustar(ctx, nombre, maxNombre, 700, Math.round(rowH * 0.36), 16); ctx.fillText(nombre, xNombre, cy + 1);
+        var vals = [r.pts, r.pj, r.pg, r.pe, r.pp, (r.dg > 0 ? "+" : "") + r.dg];
+        ctx.textAlign = "center";
+        vals.forEach(function (v, k) {
+          ctx.fillStyle = k === 0 ? NAVY : "#111827";
+          fuente(ctx, k === 0 ? 800 : 500, Math.round(rowH * (k === 0 ? 0.40 : 0.34))); ctx.fillText(String(v), xCols[k], cy + 1);
+        });
+      });
+
+      // Nota bajo la tabla
+      var notas = [];
+      if (filasSel > 0 && tabla.length > mostrar.length) notas.push("Top " + mostrar.length + " de " + tabla.length + " clubes");
+      if (hayQuita) notas.push("* incluye quita de puntos");
+      ctx.textBaseline = "alphabetic"; ctx.textAlign = "center"; ctx.fillStyle = "#64748b"; fuente(ctx, 500, 22);
+      ctx.fillText(notas.join("  ·  "), W / 2, cardY + cardH - 16);
+
+      // Pie
+      var fy = H - footH - 24;
+      ctx.fillStyle = NAVY; rr(ctx, 40, fy, W - 80, footH, 18); ctx.fill();
+      ctx.fillStyle = "#fff"; ctx.textAlign = "center";
+      var act = l.ultimaActualizacion ? "  ·  Act. " + l.ultimaActualizacion : "";
+      var linea1 = st.ultima ? "Datos cargados hasta la fecha " + st.ultima + act : "Sin resultados cargados" + act;
+      ajustar(ctx, linea1, W - 140, 700, 30, 18); ctx.fillText(linea1, W / 2, fy + 52);
+      ctx.fillStyle = "#cbd5f5"; var lin2 = "Todas las categorías y el fixture: " + WEB_CORTA;
+      ajustar(ctx, lin2, W - 120, 500, 25, 15); ctx.fillText(lin2, W / 2, fy + 98);
+      ctx.fillStyle = GOLD1;
+      var cta = ($("c-aviso").checked && st.faltan > 0)
+        ? "Faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") + ". ¿Los tenés? ¡Mandalos por DM!"
+        : "¿Tenés un resultado o ves un error? ¡Mandanos un DM!";
+      ajustar(ctx, cta, W - 120, 800, 32, 18); ctx.fillText(cta, W / 2, fy + 160);
+      ctx.fillStyle = "#fff"; ajustar(ctx, CUENTA_IG, W - 120, 700, 30, 18); ctx.fillText(CUENTA_IG, W / 2, fy + 208);
+
+      armarTextos(l, s, idCat, torneo, st);
+    });
+  }
+
+  function armarTextos(l, s, idCat, torneo, st) {
+    var catTxt = idCat === "general" ? "tabla general" : "categoría " + idCat;
+    var torneoTxt = s.torneoUnico ? "" : (torneo === "apertura" ? " · Apertura" : torneo === "clausura" ? " · Clausura" : " · Tabla Anual");
+    var txt = "📊 " + l.nombre + " · " + s.nombre + "\n" +
+      "Posiciones " + catTxt + torneoTxt + (temporada !== actual ? " (temporada " + temporada + ")" : "") + "\n" +
+      (st.ultima ? "Datos hasta la fecha " + st.ultima + ".\n" : "") + "\n" +
+      "👉 Tabla completa, fixture y las demás categorías: link en la bio.\n";
+    if ($("c-aviso").checked && st.faltan > 0) txt += "\n⚠️ Nos faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") + ". ¿Los tenés? Mandalos por DM y los cargamos.\n";
+    else txt += "\n¿Tenés un resultado o ves un error? Escribinos por DM.\n";
+    txt += "\n#BabyFutbol #FutbolInfantil #Uruguay #ONFI";
+    $("caption").value = txt;
+
+    var p = new URLSearchParams();
+    p.set("zona", idZona); p.set("liga", l.id); p.set("serie", s.id); if (idCat !== "general") p.set("categoria", idCat);
+    if (!s.torneoUnico && torneo !== "anual") p.set("torneo", torneo);
+    if (temporada !== actual) p.set("temporada", temporada);
+    $("deeplink").value = BASE_WEB + "?" + p.toString();
+  }
+
+  function copiar(el) {
+    el.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    if (navigator.clipboard) navigator.clipboard.writeText(el.value).catch(function () {});
+  }
+  function slug(t) { return String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  function descargar() {
+    var l = ligaActual(), s = serieActual(); if (!l || !s) return;
+    var st = estadoDe(s, selCat.value, efTorneo(s, selTorneo.value));
+    if (st.cargados === 0) {
+      if (!confirm("Esta categoría no tiene resultados cargados: la tabla sale en cero.\n¿Descargar igual?")) return;
+    } else if (st.faltan > 3) {
+      if (!confirm("Ojo: faltan " + st.faltan + " resultados en esta categoría, así que la tabla puede no reflejar la realidad.\n¿Descargar igual?")) return;
+    }
+    var nombre = [slug(l.id), slug(s.id), slug(selCat.value), "f" + st.ultima, temporada].join("_") + ".png";
+    try {
+      $("lienzo").toBlob(function (blob) {
+        if (!blob) { alert("No se pudo generar la imagen. Abrí la página desde Live Server."); return; }
+        var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = nombre; a.click();
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+      }, "image/png");
+    } catch (e) { alert("No se pudo generar la imagen. Abrí la página desde Live Server (no como archivo)."); }
+  }
+})();
+</script>
+</body>
+</html>

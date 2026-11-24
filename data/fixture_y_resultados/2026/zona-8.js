@@ -23409,14 +23409,14 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 2,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 5,
                     },
                     {
                       local: "Sur2000",
@@ -23427,8 +23427,8 @@ const ZONA_8_DB = {
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 0,
                     },
                     {
                       local: "Nuevo América",
@@ -24687,13 +24687,13 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 1,
                     },
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
+                      gl: 7,
                       gv: null,
                     },
                     {
@@ -25962,8 +25962,8 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 1,
                     },
                     {
                       local: "Dryco",
@@ -27236,8 +27236,8 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 4,
                     },
                     {
                       local: "Dryco",
@@ -28510,8 +28510,8 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 0,
                     },
                     {
                       local: "Dryco",
@@ -31059,8 +31059,8 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 1,
                     },
                     {
                       local: "Dryco",
@@ -32340,8 +32340,8 @@ const ZONA_8_DB = {
                     {
                       local: "Stockolmo",
                       visitante: "Terremoto",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 0,
                     },
                     {
                       local: "Dryco",
