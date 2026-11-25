@@ -131,7 +131,7 @@ const ZONA_8_DB = {
                     { local: "Olimpo Jrs", visitante: "Cerromar", gl: 2, gv: 0 },
                     { local: "Santa Catalina", visitante: "Universal", gl: 2, gv: 0 },
                     { local: "Sauce", visitante: "Estrella Federal", gl: 8, gv: 0 },
-                    { local: "Independiente Lezica", visitante: "Zorzal", gl: null, gv: null },
+                    { local: "Independiente Lezica", visitante: "Zorzal", gl: 2, gv: 0 },
                     { local: "Nuevo Juventud", visitante: "Holanda", gl: 8, gv: 0 },
                   ],
                 },
@@ -160,11 +160,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 2, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 8, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 2 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 2 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 0, gv: 3 },
                   ],
                 },
                 {
@@ -318,10 +318,10 @@ const ZONA_8_DB = {
                   num: 10,
                   partidos: [
                     { local: "Olimpo Jrs", visitante: "Cerromar", gl: 2, gv: 0 },
-                    { local: "Santa Catalina", visitante: "Universal", gl: null, gv: null },
+                    { local: "Santa Catalina", visitante: "Universal", gl: 4, gv: 0 },
                     { local: "Sauce", visitante: "Estrella Federal", gl: 0, gv: 0 },
                     { local: "Independiente Lezica", visitante: "Zorzal", gl: null, gv: null },
-                    { local: "Nuevo Juventud", visitante: "Holanda", gl: null, gv: null },
+                    { local: "Nuevo Juventud", visitante: "Holanda", gl: 7, gv: 1 },
                   ],
                 },
                 {
@@ -347,11 +347,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 4, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 1, gv: 1 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 8 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 3 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 1, gv: 3 },
                   ],
                 },
                 {
@@ -533,11 +533,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 2, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 0, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 3 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 3 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 6, gv: 1 },
                   ],
                 },
                 {
@@ -719,11 +719,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 3, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 2, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 8 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 2, gv: 1 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 3, gv: 0 },
                   ],
                 },
                 {
@@ -878,7 +878,7 @@ const ZONA_8_DB = {
                     { local: "Olimpo Jrs", visitante: "Cerromar", gl: 0, gv: 0 },
                     { local: "Santa Catalina", visitante: "Universal", gl: 2, gv: 1 },
                     { local: "Sauce", visitante: "Estrella Federal", gl: 3, gv: 2 },
-                    { local: "Independiente Lezica", visitante: "Zorzal", gl: null, gv: null },
+                    { local: "Independiente Lezica", visitante: "Zorzal", gl: 1, gv: 0 },
                     { local: "Nuevo Juventud", visitante: "Holanda", gl: 9, gv: 1 },
                   ],
                 },
@@ -897,19 +897,19 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Olimpo Jrs", visitante: "Santa Catalina", gl: 0, gv: 1 },
                     { local: "Sauce", visitante: "Cerromar", gl: 0, gv: 0 },
-                    { local: "Independiente Lezica", visitante: "Universal", gl: null, gv: null },
-                    { local: "Nuevo Juventud", visitante: "Estrella Federal", gl: null, gv: null },
+                    { local: "Independiente Lezica", visitante: "Universal", gl: 0, gv: 1 },
+                    { local: "Nuevo Juventud", visitante: "Estrella Federal", gl: 4, gv: 1 },
                     { local: "Holanda", visitante: "Zorzal", gl: 3, gv: 3 },
                   ],
                 },
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 0, gv: 2 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 3, gv: 1 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 2, gv: 1 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 3, gv: 2 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 6, gv: 1 },
                   ],
                 },
                 {
@@ -1084,18 +1084,18 @@ const ZONA_8_DB = {
                     { local: "Olimpo Jrs", visitante: "Santa Catalina", gl: 2, gv: 2 },
                     { local: "Sauce", visitante: "Cerromar", gl: 4, gv: 2 },
                     { local: "Independiente Lezica", visitante: "Universal", gl: 2, gv: 1 },
-                    { local: "Nuevo Juventud", visitante: "Estrella Federal", gl: null, gv: null },
+                    { local: "Nuevo Juventud", visitante: "Estrella Federal", gl: 1, gv: 3 },
                     { local: "Holanda", visitante: "Zorzal", gl: 0, gv: 1 },
                   ],
                 },
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 0, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 1, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 4 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 0 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 2, gv: 4 },
                   ],
                 },
                 {
@@ -1247,7 +1247,7 @@ const ZONA_8_DB = {
                 {
                   num: 10,
                   partidos: [
-                    { local: "Olimpo Jrs", visitante: "Cerromar", gl: null, gv: null },
+                    { local: "Olimpo Jrs", visitante: "Cerromar", gl: 2, gv: 0 },
                     { local: "Santa Catalina", visitante: "Universal", gl: 2, gv: 1 },
                     { local: "Sauce", visitante: "Estrella Federal", gl: 1, gv: 0 },
                     { local: "Independiente Lezica", visitante: "Zorzal", gl: 1, gv: 0 },
@@ -1277,11 +1277,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 7, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 6, gv: 2 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 6 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 1, gv: 0 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 1, gv: 1 },
                   ],
                 },
                 {
@@ -1433,10 +1433,10 @@ const ZONA_8_DB = {
                 {
                   num: 10,
                   partidos: [
-                    { local: "Olimpo Jrs", visitante: "Cerromar", gl: null, gv: null },
+                    { local: "Olimpo Jrs", visitante: "Cerromar", gl: 2, gv: 3 },
                     { local: "Santa Catalina", visitante: "Universal", gl: 8, gv: 0 },
                     { local: "Sauce", visitante: "Estrella Federal", gl: 3, gv: 6 },
-                    { local: "Independiente Lezica", visitante: "Zorzal", gl: null, gv: null },
+                    { local: "Independiente Lezica", visitante: "Zorzal", gl: 6, gv: 0 },
                     { local: "Nuevo Juventud", visitante: "Holanda", gl: 9, gv: 1 },
                   ],
                 },
@@ -1463,11 +1463,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 1, gv: 2 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 4, gv: 3 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 1, gv: 8 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 5 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 1, gv: 0 },
                   ],
                 },
                 {
@@ -1649,11 +1649,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 1, gv: 0 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 0, gv: 1 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 1, gv: 2 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 1 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 3, gv: 1 },
                   ],
                 },
                 {
@@ -1827,7 +1827,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Olimpo Jrs", visitante: "Santa Catalina", gl: 1, gv: 0 },
                     { local: "Sauce", visitante: "Cerromar", gl: 0, gv: 0 },
-                    { local: "Independiente Lezica", visitante: "Universal", gl: null, gv: null },
+                    { local: "Independiente Lezica", visitante: "Universal", gl: 2, gv: 0 },
                     { local: "Nuevo Juventud", visitante: "Estrella Federal", gl: 5, gv: 0 },
                     { local: "Holanda", visitante: "Zorzal", gl: 1, gv: 0 },
                   ],
@@ -1835,11 +1835,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 0, gv: 4 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 0, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 0, gv: 3 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 2 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 2, gv: 1 },
                   ],
                 },
                 {
@@ -2022,11 +2022,11 @@ const ZONA_8_DB = {
                 {
                   num: 13,
                   partidos: [
-                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: null, gv: null },
-                    { local: "Estrella Federal", visitante: "Holanda", gl: null, gv: null },
-                    { local: "Universal", visitante: "Nuevo Juventud", gl: null, gv: null },
-                    { local: "Cerromar", visitante: "Independiente Lezica", gl: null, gv: null },
-                    { local: "Santa Catalina", visitante: "Sauce", gl: null, gv: null },
+                    { local: "Zorzal", visitante: "Olimpo Jrs", gl: 0, gv: 3 },
+                    { local: "Estrella Federal", visitante: "Holanda", gl: 8, gv: 0 },
+                    { local: "Universal", visitante: "Nuevo Juventud", gl: 1, gv: 2 },
+                    { local: "Cerromar", visitante: "Independiente Lezica", gl: 0, gv: 2 },
+                    { local: "Santa Catalina", visitante: "Sauce", gl: 0, gv: 2 },
                   ],
                 },
                 {
@@ -2359,10 +2359,10 @@ const ZONA_8_DB = {
                 {
                   num: 10,
                   partidos: [
-                    { local: "Brandi", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Brandi", visitante: "Cerro Jrs", gl: 0, gv: 2 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: null, gv: null },
                     { local: "Beco", visitante: "Papotes", gl: 0, gv: 2 },
-                    { local: "Tigre", visitante: "Pesca", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Pesca", gl: 2, gv: 0 },
                   ],
                 },
                 {
@@ -2541,7 +2541,7 @@ const ZONA_8_DB = {
                     { local: "Papotes", visitante: "Tigre", gl: 0, gv: 4 },
                     { local: "Los Magos", visitante: "Beco", gl: null, gv: null },
                     { local: "Naranja Mecánica", visitante: "Cerro Jrs", gl: 0, gv: 2 },
-                    { local: "Los Bulevares", visitante: "Brandi", gl: null, gv: null },
+                    { local: "Los Bulevares", visitante: "Brandi", gl: 0, gv: 2 },
                   ],
                 },
                 {
@@ -2702,7 +2702,7 @@ const ZONA_8_DB = {
                     { local: "Brandi", visitante: "Cerro Jrs", gl: 1, gv: 1 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: 2, gv: 2 },
                     { local: "Beco", visitante: "Papotes", gl: 0, gv: 0 },
-                    { local: "Tigre", visitante: "Pesca", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Pesca", gl: 2, gv: 0 },
                   ],
                 },
                 {
@@ -2717,7 +2717,7 @@ const ZONA_8_DB = {
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 1, gv: 1 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: 1, gv: 1 },
                     { local: "Tigre", visitante: "Los Magos", gl: 1, gv: 1 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
@@ -2880,14 +2880,14 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Papotes", visitante: "Tigre", gl: 3, gv: 0 },
                     { local: "Los Magos", visitante: "Beco", gl: null, gv: null },
-                    { local: "Naranja Mecánica", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Cerro Jrs", gl: 1, gv: 3 },
                     { local: "Los Bulevares", visitante: "Brandi", gl: 0, gv: 2 },
                   ],
                 },
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 2, gv: 0 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Magos", gl: 4, gv: 0 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
@@ -3057,7 +3057,7 @@ const ZONA_8_DB = {
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 0, gv: 1 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: 3, gv: 4 },
                     { local: "Tigre", visitante: "Los Magos", gl: 0, gv: 0 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
@@ -3212,7 +3212,7 @@ const ZONA_8_DB = {
                     { local: "Brandi", visitante: "Cerro Jrs", gl: 0, gv: 5 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: 1, gv: 1 },
                     { local: "Beco", visitante: "Papotes", gl: 6, gv: 4 },
-                    { local: "Tigre", visitante: "Pesca", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Pesca", gl: 1, gv: 0 },
                   ],
                 },
                 {
@@ -3220,16 +3220,16 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Papotes", visitante: "Tigre", gl: 2, gv: 1 },
                     { local: "Los Magos", visitante: "Beco", gl: null, gv: null },
-                    { local: "Naranja Mecánica", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Cerro Jrs", gl: 1, gv: 6 },
                     { local: "Los Bulevares", visitante: "Brandi", gl: 2, gv: 2 },
                   ],
                 },
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 5, gv: 3 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: 9, gv: 1 },
-                    { local: "Tigre", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Los Magos", gl: 1, gv: 2 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
                   ],
                 },
@@ -3382,7 +3382,7 @@ const ZONA_8_DB = {
                     { local: "Brandi", visitante: "Cerro Jrs", gl: 0, gv: 6 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: 0, gv: 4 },
                     { local: "Beco", visitante: "Papotes", gl: 1, gv: 3 },
-                    { local: "Tigre", visitante: "Pesca", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Pesca", gl: 2, gv: 0 },
                   ],
                 },
                 {
@@ -3397,9 +3397,9 @@ const ZONA_8_DB = {
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 5, gv: 1 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: 0, gv: 8 },
-                    { local: "Tigre", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Los Magos", gl: 0, gv: 0 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
                   ],
                 },
@@ -3407,8 +3407,8 @@ const ZONA_8_DB = {
                   num: 13,
                   partidos: [
                     { local: "Los Magos", visitante: "Pesca", gl: null, gv: null },
-                    { local: "Tigre", visitante: "Cerro Jrs", gl: null, gv: null },
-                    { local: "Los Bulevares", visitante: "Beco", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Cerro Jrs", gl: 0, gv: 1 },
+                    { local: "Los Bulevares", visitante: "Beco", gl: 2, gv: 4 },
                     { local: "Brandi", visitante: "Naranja Mecánica", gl: 2, gv: 0 },
                   ],
                 },
@@ -3549,7 +3549,7 @@ const ZONA_8_DB = {
                 {
                   num: 10,
                   partidos: [
-                    { local: "Brandi", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Brandi", visitante: "Cerro Jrs", gl: 5, gv: 1 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: 0, gv: 4 },
                     { local: "Beco", visitante: "Papotes", gl: 5, gv: 0 },
                     { local: "Tigre", visitante: "Pesca", gl: 1, gv: 2 },
@@ -3567,9 +3567,9 @@ const ZONA_8_DB = {
                 {
                   num: 12,
                   partidos: [
-                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: null, gv: null },
+                    { local: "Naranja Mecánica", visitante: "Los Bulevares", gl: 7, gv: 0 },
                     { local: "Beco", visitante: "Cerro Jrs", gl: 3, gv: 3 },
-                    { local: "Tigre", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Los Magos", gl: 1, gv: 1 },
                     { local: "Pesca", visitante: "Papotes", gl: null, gv: null },
                   ],
                 },
@@ -3577,8 +3577,8 @@ const ZONA_8_DB = {
                   num: 13,
                   partidos: [
                     { local: "Los Magos", visitante: "Pesca", gl: null, gv: null },
-                    { local: "Tigre", visitante: "Cerro Jrs", gl: null, gv: null },
-                    { local: "Los Bulevares", visitante: "Beco", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Cerro Jrs", gl: 2, gv: 0 },
+                    { local: "Los Bulevares", visitante: "Beco", gl: 0, gv: 8 },
                     { local: "Brandi", visitante: "Naranja Mecánica", gl: 2, gv: 0 },
                   ],
                 },
@@ -3891,10 +3891,10 @@ const ZONA_8_DB = {
                 {
                   num: 10,
                   partidos: [
-                    { local: "Brandi", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Brandi", visitante: "Cerro Jrs", gl: 1, gv: 3 },
                     { local: "Naranja Mecánica", visitante: "Los Magos", gl: null, gv: null },
                     { local: "Beco", visitante: "Papotes", gl: 0, gv: 3 },
-                    { local: "Tigre", visitante: "Pesca", gl: null, gv: null },
+                    { local: "Tigre", visitante: "Pesca", gl: 2, gv: 0 },
                   ],
                 },
                 {
@@ -13196,7 +13196,7 @@ const ZONA_8_DB = {
       nombre: "Liga Palermo",
       escudo: "ruta/de/tu/imagen/palermo.png", // <--- Agrega la ruta aquí
       puntosPG: 2,
-      ultimaActualizacion: "23/11/2026",
+      ultimaActualizacion: "25/11/2026",
       series: [
         // ================= SERIE A =================
         {
@@ -14266,8 +14266,8 @@ const ZONA_8_DB = {
                     {
                       local: "Carabelas",
                       visitante: "Mirador",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 3,
                     },
                     {
                       local: "Urunday",
@@ -19646,14 +19646,14 @@ const ZONA_8_DB = {
                     {
                       local: "La Rinconada",
                       visitante: "Mirador",
-                      gl: 5,
+                      gl: 4,
                       gv: 1,
                     },
                     {
                       local: "Maeso",
                       visitante: "Euskal Erria",
-                      gl: 3,
-                      gv: 1,
+                      gl: 2,
+                      gv: 0,
                     },
                     {
                       local: "La Escalinata",
@@ -19665,7 +19665,7 @@ const ZONA_8_DB = {
                       local: "Enrique López",
                       visitante: "Urunday",
                       gl: 4,
-                      gv: 1,
+                      gv: 0,
                     },
                   ],
                 },
@@ -19722,8 +19722,8 @@ const ZONA_8_DB = {
                     {
                       local: "La Picada",
                       visitante: "Poco Sitio",
-                      gl: 8,
-                      gv: 3,
+                      gl: 7,
+                      gv: 2,
                     },
                     {
                       local: "Mirador",
@@ -19816,14 +19816,14 @@ const ZONA_8_DB = {
                     {
                       local: "Carabelas",
                       visitante: "Mirador",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 3,
                     },
                     {
                       local: "Urunday",
                       visitante: "La Picada",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 1,
                     },
                     {
                       local: "Don Bosco",
@@ -20926,14 +20926,14 @@ const ZONA_8_DB = {
                     {
                       local: "Carabelas",
                       visitante: "Mirador",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 0,
                     },
                     {
                       local: "Urunday",
                       visitante: "La Picada",
-                      gl: null,
-                      gv: null,
+                      gl: 5,
+                      gv: 1,
                     },
                     {
                       local: "Don Bosco",
@@ -22041,14 +22041,14 @@ const ZONA_8_DB = {
                     {
                       local: "Carabelas",
                       visitante: "Mirador",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 2,
                     },
                     {
                       local: "Urunday",
                       visitante: "La Picada",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 1,
                     },
                     {
                       local: "Don Bosco",
@@ -23439,8 +23439,8 @@ const ZONA_8_DB = {
                     {
                       local: "Intermezzo",
                       visitante: "Dep. Oriental",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 2,
                     },
                   ],
                 },
@@ -24469,8 +24469,8 @@ const ZONA_8_DB = {
                     {
                       local: "Est. de la Unión",
                       visitante: "Intermezzo",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 3,
                     },
                     {
                       local: "Terremoto",
@@ -24694,25 +24694,25 @@ const ZONA_8_DB = {
                       local: "Dryco",
                       visitante: "R. del Reducto",
                       gl: 7,
-                      gv: null,
+                      gv: 0,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 3,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 2,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 1,
                     },
                     {
                       local: "Nuevo América",
@@ -24723,8 +24723,8 @@ const ZONA_8_DB = {
                     {
                       local: "Intermezzo",
                       visitante: "Dep. Oriental",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 4,
                     },
                   ],
                 },
@@ -25968,26 +25968,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 8,
+                      gv: 0,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 5,
+                      gv: 2,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 1,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 2,
                     },
                     {
                       local: "Nuevo América",
@@ -25998,8 +25998,8 @@ const ZONA_8_DB = {
                     {
                       local: "Intermezzo",
                       visitante: "Dep. Oriental",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 5,
                     },
                   ],
                 },
@@ -27242,26 +27242,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 1,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 0,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 2,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 1,
                     },
                     {
                       local: "Nuevo América",
@@ -27272,8 +27272,8 @@ const ZONA_8_DB = {
                     {
                       local: "Intermezzo",
                       visitante: "Dep. Oriental",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 2,
                     },
                   ],
                 },
@@ -28297,8 +28297,8 @@ const ZONA_8_DB = {
                     {
                       local: "Est. de la Unión",
                       visitante: "Intermezzo",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 3,
                     },
                     {
                       local: "Terremoto",
@@ -28516,26 +28516,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 1,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 0,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 2,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 0,
                     },
                     {
                       local: "Nuevo América",
@@ -29791,26 +29791,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 2,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 2,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 3,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 6,
+                      gv: 1,
                     },
                     {
                       local: "Nuevo América",
@@ -30870,8 +30870,8 @@ const ZONA_8_DB = {
                     {
                       local: "Nueva Palmira",
                       visitante: "Dep. Oriental",
-                      gl: 3,
-                      gv: 1,
+                      gl: 1,
+                      gv: 3,
                     },
                   ],
                 },
@@ -31065,26 +31065,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 3,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 5,
+                      gv: 2,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 1,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 1,
                     },
                     {
                       local: "Nuevo América",
@@ -32346,26 +32346,26 @@ const ZONA_8_DB = {
                     {
                       local: "Dryco",
                       visitante: "R. del Reducto",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 2,
                     },
                     {
                       local: "Uruguay Buceo",
                       visitante: "Alas Rojas",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 0,
                     },
                     {
                       local: "Sur2000",
                       visitante: "Nueva Palmira",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 6,
                     },
                     {
                       local: "Exploradores",
                       visitante: "Est. de la Unión",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 2,
                     },
                     {
                       local: "Nuevo América",
