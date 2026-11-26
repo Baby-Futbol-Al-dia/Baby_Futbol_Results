@@ -3,7 +3,13776 @@
 const ZONA_8_DB = {
   zona: "Zona 8",
   ligas: [
-    
+    //Piedras Blancas
+    {
+      id: "piedras-blancas",
+      nombre: "Liga Piedras Blancas",
+      ultimaActualizacion: "30/10/2026",
+      puntosPG: 2,
+
+      series: [
+        // ================= SERIE A =================
+
+        {
+          id: "pb-A",
+          nombre: "Serie A",
+          clubes: [
+            "Toledo Chico",
+            "Primavera",
+            "Galácticos",
+            "Málaga",
+            "San Martín Bonomi",
+            "Flores Palmas",
+            "Fénix",
+            "Montevideo Belgrano",
+            "Potencia",
+            "Celtic Jrs.",
+            "Rocha",
+            "Tacuarembó Jrs.",
+            "Flor de Maroñas",
+            "Arapey Mendoza",
+            "La Lata",
+          ],
+          categorias: [
+            //2021
+            {
+              id: "2021",
+              fechas: [
+                //
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Toledo Chico", //Chequear localia
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi", //Chequear localia
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    //Fenix Libre
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Málaga", //chequear localia
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+
+                    {
+                      local: "Galácticos",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas", //chequear localia
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2020
+            {
+              id: "2020",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 7,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 7,
+                      gv: 0,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 0,
+                      gv: 7,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 3,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 6,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 0,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 5,
+                      gv: 0,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2019
+            {
+              id: "2019",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 0,
+                      gv: 0,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 4,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 5,
+                      gv: 0,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 4,
+                      gv: 0,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2018
+            {
+              id: "2018",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 1,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 1,
+                      gv: 9,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 0,
+                      gv: 8,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 6,
+                      gv: 1,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 4,
+                      gv: 2,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 2,
+                      gv: 5,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 7,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 0,
+                      gv: 1,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 5,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 1,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2017
+            {
+              id: "2017",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 6,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 1,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 4,
+                      gv: 3,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 1,
+                      gv: 8,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 4,
+                      gv: 0,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 3,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2016
+            {
+              id: "2016",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: 4,
+                      gv: 2,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 3,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 0,
+                      gv: 2,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 8,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 5,
+                      gv: 0,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: 7,
+                      gv: 0,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 3,
+                      gv: 2,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 0,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 0,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 4,
+                      gv: 0,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 5,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: 1,
+                      gv: 0,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 1,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: 2,
+                      gv: 7,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: 4,
+                      gv: 1,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fecha Libre",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2015
+            {
+              id: "2015",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 1,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 0,
+                      gv: 2,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 4,
+                      gv: 3,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 8,
+                      gv: 2,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 5,
+                      gv: 0,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 9,
+                      gv: 1,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 4,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 6,
+                      gv: 2,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2014
+            {
+              id: "2014",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 4,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 6,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 4,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 5,
+                      gv: 2,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 1,
+                      gv: 6,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 7,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 7,
+                      gv: 3,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 8,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 2,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //2013
+            {
+              id: "2013",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 3,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 6,
+                      gv: 1,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 1,
+                      gv: 1,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: 3,
+                      gv: 1,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 2,
+                      gv: 3,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Flores Palma",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 3,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 3,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 6,
+                      gv: 1,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: 0,
+                      gv: 4,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 3,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 7,
+                      gv: 0,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 7,
+                      gv: 1,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: 5,
+                      gv: 1,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 3,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fecha Libre",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 4,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: 3,
+                      gv: 3,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: 5,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: 2,
+                      gv: 4,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: 7,
+                      gv: 1,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 7,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 2,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fecha Libre",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //sub 11 fem
+            {
+              id: "sub 11 fem",
+              fechas: [
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 3,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 2,
+                      gv: 0,
+                    },
+                  ],
+                },
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 0,
+                      gv: 0,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            //sub 13 fem
+            {
+              id: "sub 13 fem",
+              fechas: [
+                //fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Toledo Chico",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Fénix",
+                      gl: 1,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Toledo Chico",
+                      gl: 0,
+                      gv: 6,
+                    },
+                  ],
+                },
+                //fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Galácticos",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Málaga",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flores Palmas",
+                      gl: 2,
+                      gv: 1,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Rocha",
+                      gl: 4,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Montevideo Belgrano",
+                      gl: 2,
+                      gv: 3,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Potencia",
+                      gl: 0,
+                      gv: 0,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Fénix",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Flor de Maroñas",
+                      gl: 2,
+                      gv: 0,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "San Martín Bonomi",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 7,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Fénix",
+                      gl: 0,
+                      gv: 0,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Potencia",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "San Martín Bonomi",
+                      gl: 8,
+                      gv: 0,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Montevideo Belgrano",
+                      gl: 0,
+                      gv: 7,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Montevideo Belgrano",
+                      gl: 1,
+                      gv: 3,
+                    },
+                  ],
+                },
+                //fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Primavera",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Primavera",
+                      gl: 1,
+                      gv: 1,
+                    },
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flores Palmas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Arapey Mendoza",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Rocha",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Toledo Chico",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Rocha",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Tacuarembó Jrs.",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 23,
+                  partidos: [
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flores Palmas",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //fecha 24 o fecha 9 clausura
+                {
+                  num: 24,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "San Martín Bonomi",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "Fénix",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 25,
+                  partidos: [
+                    {
+                      local: "Celtic Jrs.",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Málaga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fénix",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Galácticos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 26,
+                  partidos: [
+                    {
+                      local: "",
+                      visitante: "Celtic Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Galácticos",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Málaga",
+                      visitante: "Primavera",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 27,
+                  partidos: [
+                    {
+                      local: "Rocha",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Montevideo Belgrano",
+                      visitante: "Toledo Chico",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 28,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Tacuarembó Jrs.",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Montevideo Belgrano",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 29,
+                  partidos: [
+                    {
+                      local: "Flor de Maroñas",
+                      visitante: "La Lata",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Primavera",
+                      visitante: "Potencia",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                {
+                  num: 30,
+                  partidos: [
+                    {
+                      local: "La Lata",
+                      visitante: "Arapey Mendoza",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Potencia",
+                      visitante: "Flor de Maroñas",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        // ================= SERIE B =================
+        {
+          id: "pb-B",
+          nombre: "Serie B",
+          clubes: [
+            "Celiar",
+            "Once Rojo",
+            "Integración",
+            "Alumni",
+            "Punta de Rieles",
+            "Juana de América",
+            "Ituzaingó",
+            "Libertad",
+            "Parque Guaraní",
+            "Estrella de Oro",
+            "J de Manga",
+            "Fray Bentos",
+          ],
+          categorias: [
+            {
+              id: "2020",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 2,
+                      gv: 2,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos", //revisar
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2019",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2018",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 4,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2017",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 2,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2016",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 6,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 0,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2015",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 2,
+                      gv: 2,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 2,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2014",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 6,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 5,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "2013",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: 0,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 2,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              id: "sub-13 fem",
+              fechas: [
+                //Fecha 1
+                {
+                  num: 1,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 2
+                {
+                  num: 2,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 3
+                {
+                  num: 3,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Punta de Rieles",
+                      gl: 1,
+                      gv: 1,
+                    },
+                  ],
+                },
+                //Fecha 4
+                {
+                  num: 4,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 5
+                {
+                  num: 5,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 6
+                {
+                  num: 6,
+                  partidos: [
+                    {
+                      local: "Juana de América",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 7
+                {
+                  num: 7,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "J de Manga",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 8
+                {
+                  num: 8,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 9
+                {
+                  num: 9,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Alumni",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 10
+                {
+                  num: 10,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Libertad",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                //Fecha 11
+                {
+                  num: 11,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 12
+                {
+                  num: 12,
+                  partidos: [
+                    {
+                      local: "J de Manga",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Juana de América",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 13
+                {
+                  num: 13,
+                  partidos: [
+                    {
+                      local: "Once Rojo",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 14
+                {
+                  num: 14,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 15
+                {
+                  num: 15,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Once Rojo",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Alumni",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 16
+                {
+                  num: 16,
+                  partidos: [
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 17
+                {
+                  num: 17,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 18
+                {
+                  num: 18,
+                  partidos: [
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "J de Manga",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Parque Guaraní",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 19
+                {
+                  num: 19,
+                  partidos: [
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Ituzaingó",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Celiar",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Integración",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Juana de América",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 20
+                {
+                  num: 20,
+                  partidos: [
+                    {
+                      local: "Alumni",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Estrella de Oro",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 21
+                {
+                  num: 21,
+                  partidos: [
+                    {
+                      local: "Celiar",
+                      visitante: "Fray Bentos",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Estrella de Oro",
+                      visitante: "Libertad",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Once Rojo",
+                      visitante: "Punta de Rieles",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+                // Fecha 22
+                {
+                  num: 22,
+                  partidos: [
+                    {
+                      local: "Ituzaingó",
+                      visitante: "Celiar",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Punta de Rieles",
+                      visitante: "Parque Guaraní",
+                      gl: null,
+                      gv: null,
+                    },
+                    {
+                      local: "Fray Bentos",
+                      visitante: "Integración",
+                      gl: null,
+                      gv: null,
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
 
     // Paso Molino
     {
@@ -36490,13758 +50259,7 @@ const ZONA_8_DB = {
         },
       ],
     },
-    //Piedras Blancas
-    {
-      id: "piedras-blancas",
-      nombre: "Liga Piedras Blancas",
-      ultimaActualizacion: "30/10/2026",
-      puntosPG: 2,
-
-      series: [
-        // ================= SERIE A =================
-
-        {
-          id: "pb-A",
-          nombre: "Serie A",
-          clubes: [
-            "Toledo Chico",
-            "Primavera",
-            "Galácticos",
-            "Málaga",
-            "San Martín Bonomi",
-            "Flores Palmas",
-            "Fénix",
-            "Montevideo Belgrano",
-            "Potencia",
-            "Celtic Jrs.",
-            "Rocha",
-            "Tacuarembó Jrs.",
-            "Flor de Maroñas",
-            "Arapey Mendoza",
-            "La Lata",
-          ],
-          categorias: [
-            //2021
-            {
-              id: "2021",
-              fechas: [
-                //
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 1,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Toledo Chico", //Chequear localia
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi", //Chequear localia
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    //Fenix Libre
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Málaga", //chequear localia
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-
-                    {
-                      local: "Galácticos",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas", //chequear localia
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 0,
-                      gv: 2,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2020
-            {
-              id: "2020",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 8,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 2,
-                      gv: 7,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 7,
-                      gv: 0,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 8,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 0,
-                      gv: 7,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 8,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 3,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 8,
-                      gv: 0,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 6,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 0,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 5,
-                      gv: 0,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2019
-            {
-              id: "2019",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 0,
-                      gv: 0,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 4,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 3,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 5,
-                      gv: 0,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 4,
-                      gv: 0,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2018
-            {
-              id: "2018",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 2,
-                      gv: 1,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 1,
-                      gv: 9,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 0,
-                      gv: 8,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 6,
-                      gv: 1,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 4,
-                      gv: 2,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 2,
-                      gv: 5,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 7,
-                      gv: 1,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 0,
-                      gv: 1,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 5,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 1,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2017
-            {
-              id: "2017",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 6,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 2,
-                      gv: 1,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 4,
-                      gv: 3,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 1,
-                      gv: 2,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 1,
-                      gv: 8,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 1,
-                      gv: 2,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 1,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 8,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 4,
-                      gv: 0,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 3,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2016
-            {
-              id: "2016",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 3,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 3,
-                      gv: 1,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 0,
-                      gv: 2,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 5,
-                      gv: 0,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 3,
-                      gv: 2,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 0,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 0,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 4,
-                      gv: 0,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 1,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 0,
-                      gv: 2,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2015
-            {
-              id: "2015",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 1,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 0,
-                      gv: 2,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 4,
-                      gv: 3,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 1,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 8,
-                      gv: 2,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 5,
-                      gv: 0,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 9,
-                      gv: 1,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 4,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 6,
-                      gv: 2,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2014
-            {
-              id: "2014",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 4,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 2,
-                      gv: 6,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 4,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 5,
-                      gv: 2,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 1,
-                      gv: 6,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 2,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 7,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 7,
-                      gv: 3,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 8,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 2,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 3,
-                      gv: 1,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //2013
-            {
-              id: "2013",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 3,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 6,
-                      gv: 1,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 1,
-                      gv: 1,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 4,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 2,
-                      gv: 3,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 3,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 6,
-                      gv: 1,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 3,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 7,
-                      gv: 0,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 7,
-                      gv: 1,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 3,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 4,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //sub 11 fem
-            {
-              id: "sub 11 fem",
-              fechas: [
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 3,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 2,
-                      gv: 0,
-                    },
-                  ],
-                },
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 0,
-                      gv: 0,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            //sub 13 fem
-            {
-              id: "sub 13 fem",
-              fechas: [
-                //fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Toledo Chico",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Fénix",
-                      gl: 1,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Toledo Chico",
-                      gl: 0,
-                      gv: 6,
-                    },
-                  ],
-                },
-                //fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Galácticos",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Málaga",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flores Palmas",
-                      gl: 2,
-                      gv: 1,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Rocha",
-                      gl: 4,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Montevideo Belgrano",
-                      gl: 2,
-                      gv: 3,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Potencia",
-                      gl: 0,
-                      gv: 0,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Fénix",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Flor de Maroñas",
-                      gl: 2,
-                      gv: 0,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 7,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Fénix",
-                      gl: 0,
-                      gv: 0,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Potencia",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "San Martín Bonomi",
-                      gl: 8,
-                      gv: 0,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Montevideo Belgrano",
-                      gl: 0,
-                      gv: 7,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Montevideo Belgrano",
-                      gl: 1,
-                      gv: 3,
-                    },
-                  ],
-                },
-                //fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Primavera",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Primavera",
-                      gl: 1,
-                      gv: 1,
-                    },
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flores Palmas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Arapey Mendoza",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Rocha",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Toledo Chico",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Flores Palmas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Rocha",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Tacuarembó Jrs.",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 23,
-                  partidos: [
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //fecha 24 o fecha 9 clausura
-                {
-                  num: 24,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "San Martín Bonomi",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "Fénix",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 25,
-                  partidos: [
-                    {
-                      local: "Celtic Jrs.",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Málaga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fénix",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Galácticos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 26,
-                  partidos: [
-                    {
-                      local: "",
-                      visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Galácticos",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Málaga",
-                      visitante: "Primavera",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 27,
-                  partidos: [
-                    {
-                      local: "Rocha",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Montevideo Belgrano",
-                      visitante: "Toledo Chico",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 28,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Tacuarembó Jrs.",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 29,
-                  partidos: [
-                    {
-                      local: "Flor de Maroñas",
-                      visitante: "La Lata",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Primavera",
-                      visitante: "Potencia",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                {
-                  num: 30,
-                  partidos: [
-                    {
-                      local: "La Lata",
-                      visitante: "Arapey Mendoza",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Potencia",
-                      visitante: "Flor de Maroñas",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        // ================= SERIE B =================
-        {
-          id: "pb-B",
-          nombre: "Serie B",
-          clubes: [
-            "Celiar",
-            "Once Rojo",
-            "Integración",
-            "Alumni",
-            "Punta de Rieles",
-            "Juana de América",
-            "Ituzaingó",
-            "Libertad",
-            "Parque Guaraní",
-            "Estrella de Oro",
-            "J de Manga",
-            "Fray Bentos",
-          ],
-          categorias: [
-            {
-              id: "2020",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 2,
-                      gv: 2,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos", //revisar
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2019",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2018",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 4,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2017",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 2,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2016",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 6,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 0,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2015",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 2,
-                      gv: 2,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 2,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2014",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 6,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 5,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "2013",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: 0,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 2,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              id: "sub-13 fem",
-              fechas: [
-                //Fecha 1
-                {
-                  num: 1,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 2
-                {
-                  num: 2,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 3
-                {
-                  num: 3,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Punta de Rieles",
-                      gl: 1,
-                      gv: 1,
-                    },
-                  ],
-                },
-                //Fecha 4
-                {
-                  num: 4,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 5
-                {
-                  num: 5,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 6
-                {
-                  num: 6,
-                  partidos: [
-                    {
-                      local: "Juana de América",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 7
-                {
-                  num: 7,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "J de Manga",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 8
-                {
-                  num: 8,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 9
-                {
-                  num: 9,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Alumni",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 10
-                {
-                  num: 10,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Libertad",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                //Fecha 11
-                {
-                  num: 11,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 12
-                {
-                  num: 12,
-                  partidos: [
-                    {
-                      local: "J de Manga",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Juana de América",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 13
-                {
-                  num: 13,
-                  partidos: [
-                    {
-                      local: "Once Rojo",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 14
-                {
-                  num: 14,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 15
-                {
-                  num: 15,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Once Rojo",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Alumni",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 16
-                {
-                  num: 16,
-                  partidos: [
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 17
-                {
-                  num: 17,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 18
-                {
-                  num: 18,
-                  partidos: [
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "J de Manga",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Parque Guaraní",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 19
-                {
-                  num: 19,
-                  partidos: [
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Ituzaingó",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Celiar",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Integración",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Juana de América",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 20
-                {
-                  num: 20,
-                  partidos: [
-                    {
-                      local: "Alumni",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Estrella de Oro",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 21
-                {
-                  num: 21,
-                  partidos: [
-                    {
-                      local: "Celiar",
-                      visitante: "Fray Bentos",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Estrella de Oro",
-                      visitante: "Libertad",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Once Rojo",
-                      visitante: "Punta de Rieles",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-                // Fecha 22
-                {
-                  num: 22,
-                  partidos: [
-                    {
-                      local: "Ituzaingó",
-                      visitante: "Celiar",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Punta de Rieles",
-                      visitante: "Parque Guaraní",
-                      gl: null,
-                      gv: null,
-                    },
-                    {
-                      local: "Fray Bentos",
-                      visitante: "Integración",
-                      gl: null,
-                      gv: null,
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
+    
     // Prado
     {
       id: "prado",
