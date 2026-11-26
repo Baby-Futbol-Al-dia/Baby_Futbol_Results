@@ -37,11 +37,19 @@ const ZONA_7_DB = {
       ],
     },
     //Liga Regional Pando
+    {},
     //Liga regional Costa de Oro
+    {},
     //Liga Fundadora
+    {},
     //Liga Interbalnearea
+    {},
     //Liga Regional del Sur
+    {},
     //Liga Regional Noreste
+    {},
 
+
+    
   ],
 };

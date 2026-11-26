@@ -13188,9 +13188,7 @@ const ZONA_8_DB = {
         },
       ],
     },
-
-
-        // Palermo
+    // Palermo
     {
       id: "palermo",
       nombre: "Liga Palermo",
@@ -33996,8 +33994,6 @@ const ZONA_8_DB = {
         },
       ],
     },
-    
-
     //Uruguaya
     {
       id: "uruguaya",
@@ -36494,7 +36490,6 @@ const ZONA_8_DB = {
         },
       ],
     },
-
     //Piedras Blancas
     {
       id: "piedras-blancas",

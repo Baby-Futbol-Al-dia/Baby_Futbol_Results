@@ -1,12 +1,11 @@
-// original db.js actual zona-8.js - Base de datos ONFI (Zona 8)
-// db.js - Base de datos ONFI (Zona 8)
+// original db.js actual zona-.j3s - Base de datos ONFI (Zona 3)
+// db.js - Base de datos ONFI (Zona 3)
 
-const ZONA_8_DB = {
-  zona: "Zona 8",
+const ZONA_3_DB = {
+  zona: "Zona 3",
   ligas: [
     
 
-    //Ligas al dia, a la fecha 30/10 de aca para abajo
     // Palermo
     {
       id: "palermo",
