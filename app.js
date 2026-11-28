@@ -30,9 +30,37 @@ function elegirSiExiste(select, valor) {
   return existe;
 }
 
+// Torneos que viven en otro archivo (Copa de Campeones, Metropolitano...), cargados en window.ZONA_TORNEOS.
+// Solo se muestran los que ya tienen al menos una serie cargada.
+function obtenerTorneos() {
+  const T = window.ZONA_TORNEOS;
+  const lista = T ? T.torneos_fifi || T.torneos || [] : [];
+  return lista.filter((t) => t && t.id && (t.series || []).some((s) => s && s.id));
+}
+
+// Serie "plana" (la que tiene una sola categoría, típico de los torneos): { categoria: "2020", fechas: [...] }.
+// Se convierte a la forma de siempre ({ categorias: [{ id, fechas }] }) para que todo lo demás funcione igual.
+function normalizarSeries(ligas) {
+  (ligas || []).forEach((liga) => {
+    (liga.series || []).forEach((s) => {
+      if (!s || s.categorias || s.categoria === undefined || s.categoria === null) return;
+      const cat = { id: String(s.categoria), fechas: s.fechas || [] };
+      if (s.sancionesApertura) cat.sancionesApertura = s.sancionesApertura;
+      if (s.sancionesClausura) cat.sancionesClausura = s.sancionesClausura;
+      s.categorias = [cat];
+    });
+  });
+}
+
 function inicializarApp() {
   const selectLiga = document.getElementById("select-liga");
   if (!selectLiga) return;
+
+  // Ignorar ligas vacías ({}) y sumar los torneos como entradas más del selector
+  ZONA_DB.ligas = (ZONA_DB.ligas || []).filter((l) => l && l.id);
+  obtenerTorneos().forEach((t) => {
+    if (!ZONA_DB.ligas.some((l) => l.id === t.id)) ZONA_DB.ligas.push(Object.assign({}, t, { esTorneo: true }));
+  });
 
   // Títulos y escudos de ligas según la zona cargada
   document.title = "Baby Fútbol ONFI - " + ZONA_DB.zona;
@@ -71,12 +99,18 @@ function inicializarApp() {
 
   selectLiga.innerHTML = "";
 
+  normalizarSeries(ZONA_DB.ligas);
+
+  // Primero las ligas; los torneos van en un grupo aparte dentro del mismo selector
+  const grupoTorneos = document.createElement("optgroup");
+  grupoTorneos.label = (window.ZONA_TORNEOS && window.ZONA_TORNEOS.etiqueta) || "Torneos";
   ZONA_DB.ligas.forEach((liga) => {
     const option = document.createElement("option");
     option.value = liga.id;
     option.textContent = liga.nombre;
-    selectLiga.appendChild(option);
+    (liga.esTorneo ? grupoTorneos : selectLiga).appendChild(option);
   });
+  if (grupoTorneos.children.length) selectLiga.appendChild(grupoTorneos);
 
   // Escuchar cambios en el selector de torneo (si existe en la vista)
   const selectTorneo = document.getElementById("select-torneo");
@@ -100,10 +134,71 @@ function inicializarApp() {
   PREFERENCIA_URL = {}; // a partir de acá manda lo que elija la persona
 }
 
+// Torneos "por categoría" (ej. Copa de Campeones): cada categoría tiene sus propios clubes y grupos.
+// En los datos, cada serie pertenece a una sola categoría (serie.categorias = [{ id, fechas }]) y el torneo lleva
+// porCategoria: true. En la pantalla se elige primero la categoría y después la serie de esa categoría.
+function categoriasDeLiga(liga) {
+  const ids = [];
+  (liga.series || []).forEach((s) =>
+    (s && s.categorias ? s.categorias : []).forEach((c) => {
+      if (!ids.includes(c.id)) ids.push(c.id);
+    })
+  );
+  return ids.sort((a, b) => (isNaN(a) || isNaN(b) ? 0 : Number(b) - Number(a)));
+}
+
+function ordenarSelectores(liga) {
+  const porCat = !!(liga && liga.porCategoria);
+  const cs = document.getElementById("select-categoria");
+  const ss = document.getElementById("select-serie");
+  if (cs && cs.parentElement) cs.parentElement.style.order = porCat ? "1" : "";
+  if (ss && ss.parentElement) ss.parentElement.style.order = porCat ? "2" : "";
+}
+
+function llenarSeriesDeCategoria() {
+  const idLiga = document.getElementById("select-liga").value;
+  const idCat = document.getElementById("select-categoria").value;
+  const liga = ZONA_DB.ligas.find((l) => l.id === idLiga);
+  const selectSerie = document.getElementById("select-serie");
+  selectSerie.innerHTML = "";
+  ((liga && liga.series) || [])
+    .filter((s) => s && s.id && (s.categorias || []).some((c) => c.id === idCat))
+    .forEach((serie) => {
+      const option = document.createElement("option");
+      option.value = serie.id;
+      option.textContent = serie.nombre;
+      selectSerie.appendChild(option);
+    });
+  elegirSiExiste(selectSerie, PREFERENCIA_URL.serie);
+  actualizarVista();
+}
+
+function cambiarCategoria() {
+  const liga = ZONA_DB.ligas.find((l) => l.id === document.getElementById("select-liga").value);
+  if (liga && liga.porCategoria) llenarSeriesDeCategoria();
+  else actualizarVista();
+}
+
 function cambiarLiga() {
   const idLiga = document.getElementById("select-liga").value;
   const ligaSeleccionada = ZONA_DB.ligas.find((l) => l.id === idLiga);
   const selectSerie = document.getElementById("select-serie");
+
+  ordenarSelectores(ligaSeleccionada);
+
+  if (ligaSeleccionada && ligaSeleccionada.porCategoria) {
+    const selectCat = document.getElementById("select-categoria");
+    selectCat.innerHTML = "";
+    categoriasDeLiga(ligaSeleccionada).forEach((id) => {
+      const option = document.createElement("option");
+      option.value = id;
+      option.textContent = `Categoría ${id}`;
+      selectCat.appendChild(option);
+    });
+    elegirSiExiste(selectCat, PREFERENCIA_URL.categoria);
+    llenarSeriesDeCategoria();
+    return;
+  }
 
   selectSerie.innerHTML = "";
 
@@ -124,6 +219,13 @@ function cambiarSerie() {
   const idLiga = document.getElementById("select-liga").value;
   const idSerie = document.getElementById("select-serie").value;
   const selectCat = document.getElementById("select-categoria");
+
+  // En los torneos por categoría la categoría ya está elegida: solo se actualiza la vista
+  const ligaPC = ZONA_DB.ligas.find((l) => l.id === idLiga);
+  if (ligaPC && ligaPC.porCategoria) {
+    actualizarVista();
+    return;
+  }
 
   selectCat.innerHTML = "";
 
@@ -628,9 +730,19 @@ function renderizarFechas(serie, idCat, contenedorId = "contenedor-fechas", torn
             .join(" · ")}</div>`
         : "";
 
+      // Sede: en los torneos cada fecha se juega en la cancha de uno de los clubes ("local" es solo el orden)
+      const sedeHTML = fechaObj.sede
+        ? `<div class="libre-fecha" style="margin:0 0 0.6rem">📍 Sede: ${
+            ESCUDOS_CLUBES[fechaObj.sede]
+              ? `<img src="${ESCUDOS_CLUBES[fechaObj.sede]}" alt="${fechaObj.sede}" class="escudo-equipo" /> `
+              : ""
+          }<strong>${fechaObj.sede}</strong></div>`
+        : "";
+
       cardFecha.innerHTML = `
         <details>
           <summary>${labelFecha}</summary>
+          ${sedeHTML}
           <table class="tabla-partidos">
             <tbody>${partidosHTML}</tbody>
           </table>

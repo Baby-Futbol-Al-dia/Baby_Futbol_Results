@@ -1,7 +1,7 @@
 // original db.js actual zona-2.js - Base de datos ONFI (Zona 2)
 // db.js - Base de datos ONFI (Zona 2)
 
-const ZONA_8_DB = {
+const ZONA_2_DB = {
   zona: "Zona 2",
   ligas: [
     

@@ -75,14 +75,25 @@
           <option value="clausura">Clausura</option>
         </select>
       </div>
-      <label for="s-filas">Cuántos clubes mostrar</label>
-      <select id="s-filas">
-        <option value="5">Top 5</option>
-        <option value="6">Top 6</option>
-        <option value="8" selected>Top 8</option>
-        <option value="10">Top 10</option>
-        <option value="0">Todos</option>
+      <label for="s-tipo">Tipo de imagen</label>
+      <select id="s-tipo">
+        <option value="tabla">Tabla de posiciones</option>
+        <option value="resultados">Resultados de la fecha</option>
       </select>
+      <div id="bloque-fecha" style="display:none">
+        <label for="s-fecha">Fecha</label>
+        <select id="s-fecha"></select>
+      </div>
+      <div id="bloque-filas">
+        <label for="s-filas">Cuántos clubes mostrar</label>
+        <select id="s-filas">
+          <option value="5">Top 5</option>
+          <option value="6">Top 6</option>
+          <option value="8" selected>Top 8</option>
+          <option value="10">Top 10</option>
+          <option value="0">Todos</option>
+        </select>
+      </div>
       <label for="s-formato">Formato</label>
       <select id="s-formato">
         <option value="1350">Post (1080 × 1350)</option>
@@ -174,6 +185,19 @@
     return cargar(rutaEscudos);
   }).then(function () {
     ESC = (window.ZONA_EXTRAS && window.ZONA_EXTRAS.escudosClubes) || {};
+    // torneos de la zona (archivo opcional): se suman a la lista de ligas
+    if (!zona.torneos) return;
+    return cargar(zona.torneos.replace("{temporada}", temporada)).then(function () {
+      var T = (0, eval)(zona.variableTorneos) || {};
+      (T.torneos_fifi || T.torneos || []).filter(function (t) {
+        return t && t.id && (t.series || []).some(function (x) { return x && x.id; });
+      }).forEach(function (t) {
+        t.esTorneo = true;
+        if (!DB.ligas.some(function (l) { return l.id === t.id; })) DB.ligas.push(t);
+      });
+      window.__etiquetaTorneos = T.etiqueta || "Torneos";
+    }).catch(function () { /* sin torneos para esta temporada */ });
+  }).then(function () {
     iniciar();
   }).catch(function (src) {
     document.querySelector("main").innerHTML = "<p>No se pudo cargar " + src + ". Abrí esta página desde Live Server.</p>";
@@ -229,6 +253,12 @@
   function partidoValido(p) { return p && p.local && p.visitante && p.local !== "Fecha Libre" && p.visitante !== "Fecha Libre"; }
   function tieneRes(p) { return p.gl !== null && p.gl !== undefined && p.gv !== null && p.gv !== undefined; }
   function efTorneo(serie, torneo) { return serie.torneoUnico ? "anual" : torneo; }
+  // Las fechas del Clausura se cuentan desde 1: con límite 9, la fecha 13 es la "Fecha 4 Clausura"
+  function esClausura(serie, num) { return !serie.torneoUnico && num > limiteApertura(serie); }
+  function numVista(serie, num) { return esClausura(serie, num) ? num - limiteApertura(serie) : num; }
+  function etiquetaFecha(serie, num) { return "fecha " + numVista(serie, num) + (esClausura(serie, num) ? " Clausura" : ""); }
+  // "fecha 25" en la tabla anual / apertura; "fecha 4 Clausura" cuando se mira el Clausura
+  function textoUltima(serie, num, torneo) { return torneo === "clausura" ? etiquetaFecha(serie, num) : "fecha " + num; }
   function fechasDe(serie, cat, torneo) {
     var lim = limiteApertura(serie), t = efTorneo(serie, torneo);
     return (cat.fechas || []).filter(function (f) {
@@ -266,6 +296,29 @@
     return { cls: "rojo", txt: "Con huecos" };
   }
 
+  // Partidos reales y libres de una fecha (igual que obtenerPartidosYLibres de app.js)
+  function partidosYLibres(serie, fechaObj) {
+    var partidos = (fechaObj && fechaObj.partidos) || [], libres = [], reales = [];
+    function add(n) { if (n && libres.indexOf(n) === -1) libres.push(n); }
+    if (fechaObj && fechaObj.libre) [].concat(fechaObj.libre).forEach(add);
+    partidos.forEach(function (p) {
+      if (p.local === "Fecha Libre") add(p.visitante);
+      else if (p.visitante === "Fecha Libre") add(p.local);
+      else if (p.local && p.visitante) reales.push(p);
+    });
+    var n = serie.clubes ? serie.clubes.length : 0;
+    if (libres.length === 0 && n % 2 === 1 && reales.length === (n - 1) / 2) {
+      var juegan = {}; reales.forEach(function (p) { juegan[p.local] = 1; juegan[p.visitante] = 1; });
+      var faltan = serie.clubes.filter(function (c) { return !juegan[c]; });
+      if (faltan.length === 1) add(faltan[0]);
+    }
+    return { reales: reales, libres: libres };
+  }
+  function conteoFecha(serie, fechaObj) {
+    var r = partidosYLibres(serie, fechaObj), cargados = r.reales.filter(tieneRes).length;
+    return { reales: r.reales, libres: r.libres, total: r.reales.length, cargados: cargados, faltan: r.reales.length - cargados };
+  }
+
   // ============ Imágenes ============
   var cacheImg = {};
   function img(src) {
@@ -284,13 +337,16 @@
 
   function iniciar() {
     selLiga = $("s-liga"); selSerie = $("s-serie"); selCat = $("s-cat"); selTorneo = $("s-torneo");
-    selLiga.innerHTML = DB.ligas.map(function (l) { return '<option value="' + l.id + '">' + l.nombre + "</option>"; }).join("");
+    var opcion = function (l) { return '<option value="' + l.id + '">' + l.nombre + "</option>"; };
+    var tornTodos = DB.ligas.filter(function (l) { return l.esTorneo; });
+    selLiga.innerHTML = DB.ligas.filter(function (l) { return !l.esTorneo; }).map(opcion).join("") +
+      (tornTodos.length ? '<optgroup label="' + (window.__etiquetaTorneos || "Torneos") + '">' + tornTodos.map(opcion).join("") + "</optgroup>" : "");
     var pl = params.get("liga");
     if (pl && DB.ligas.some(function (l) { return l.id === pl; })) selLiga.value = pl;
 
     selLiga.addEventListener("change", function () { llenarSeries(); });
     selSerie.addEventListener("change", function () { llenarCats(); });
-    [selCat, selTorneo, $("s-filas"), $("s-formato"), $("c-aviso")].forEach(function (el) { el.addEventListener("change", dibujar); });
+    [selCat, selTorneo, $("s-filas"), $("s-formato"), $("c-aviso"), $("s-tipo"), $("s-fecha")].forEach(function (el) { el.addEventListener("change", dibujar); });
     $("b-descargar").addEventListener("click", descargar);
     $("b-copiar").addEventListener("click", function () { copiar($("caption")); });
     $("b-copiar-link").addEventListener("click", function () { copiar($("deeplink")); });
@@ -302,7 +358,11 @@
   function llenarSeries(preSerie, preCat) {
     var l = ligaActual();
     var series = (l && l.series ? l.series : []).filter(function (s) { return s && s.id; });
-    selSerie.innerHTML = series.map(function (s) { return '<option value="' + s.id + '">' + s.nombre + "</option>"; }).join("");
+    selSerie.innerHTML = series.map(function (s) {
+      // en los torneos por categoría cada serie es de una sola categoría: se muestra "2020 · Serie 1"
+      var pref = l.porCategoria && s.categorias && s.categorias[0] ? s.categorias[0].id + " · " : "";
+      return '<option value="' + s.id + '">' + pref + s.nombre + "</option>";
+    }).join("");
     if (preSerie && series.some(function (s) { return s.id === preSerie; })) selSerie.value = preSerie;
     llenarCats(preCat);
     armarEstado();
@@ -349,7 +409,7 @@
       if (!s || !s.categorias) return;
       s.categorias.forEach(function (c) {
         var e = estadoCat(s, c, selTorneo.value), sf = semaforo(e);
-        html += "<tr><td>" + s.nombre + "</td><td>" + c.id + "</td><td>" + (e.ultima || "—") + "</td><td>" + e.cargados + "</td><td>" + e.faltan + "</td>" +
+        html += "<tr><td>" + s.nombre + "</td><td>" + c.id + "</td><td>" + (e.ultima ? (selTorneo.value === "clausura" && !s.torneoUnico ? numVista(s, e.ultima) : e.ultima) : "—") + "</td><td>" + e.cargados + "</td><td>" + e.faltan + "</td>" +
           '<td><span class="pill ' + sf.cls + '">' + sf.txt + "</span></td>" +
           '<td><button class="ver sec" data-s="' + s.id + '" data-c="' + c.id + '">Ver</button></td></tr>';
       });
@@ -381,12 +441,83 @@
     ctx.drawImage(im, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
   }
 
-  var dibujoId = 0;
+  var dibujoId = 0, claveLista = "", claveSerie = "";
+
+  function fuentesListas() {
+    return (document.fonts && document.fonts.load)
+      ? Promise.all([document.fonts.load("800 40px Montserrat"), document.fonts.load("700 40px Montserrat"), document.fonts.load("500 40px Montserrat")]).catch(function () {})
+      : Promise.resolve();
+  }
+
+  // Selector de fechas (modo resultados): por defecto la última con resultados
+  function actualizarFechas(l, s, cat, torneo) {
+    var sel = $("s-fecha");
+    var kLista = [l.id, s.id, cat.id, torneo].join("|"), kSerie = [l.id, s.id, torneo].join("|");
+    if (kLista !== claveLista) {
+      var prev = sel.value;
+      var fechas = fechasDe(s, cat, torneo).slice().sort(function (a, b) { return a.num - b.num; });
+      var ult = estadoCat(s, cat, torneo).ultima;
+      sel.innerHTML = fechas.map(function (f) {
+        var c = conteoFecha(s, f);
+        return '<option value="' + f.num + '">Fecha ' + numVista(s, f.num) + (esClausura(s, f.num) ? " Clausura" : "") + " · " + c.cargados + "/" + c.total + "</option>";
+      }).join("");
+      var existe = function (v) { return sel.querySelector('option[value="' + v + '"]'); };
+      if (kSerie === claveSerie && prev && existe(prev)) sel.value = prev;
+      else if (ult && existe(ult)) sel.value = String(ult);
+      else if (fechas.length) sel.value = String(fechas[0].num);
+      claveLista = kLista; claveSerie = kSerie;
+    }
+  }
+
+  // Fondo, cabecera, banda y tarjeta blanca. Devuelve las medidas para dibujar adentro.
+  function marco(ctx, W, H, l, s, logo, bandaTxt) {
+    var g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, GOLD1); g.addColorStop(1, GOLD2);
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    if (logo) {
+      ctx.save(); ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.closePath(); ctx.clip();
+      ctx.fillStyle = "#fff"; ctx.fillRect(50, 55, 140, 140); encajar(ctx, logo, 50, 55, 140, 140); ctx.restore();
+      ctx.lineWidth = 5; ctx.strokeStyle = NAVY; ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.stroke();
+    }
+    ctx.fillStyle = NAVY; ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    fuente(ctx, 700, 26); ctx.fillText("BABY FÚTBOL AL DÍA", 220, 90);
+    var tp = ajustar(ctx, l.nombre.toUpperCase(), 820, 800, 60, 34); ctx.fillText(l.nombre.toUpperCase(), 220, 90 + 8 + tp);
+    var ty = 90 + 8 + tp + 14;
+    var ts = ajustar(ctx, s.nombre, 820, 700, 32, 20); ctx.fillText(s.nombre, 220, ty + ts);
+    var by = 235;
+    ctx.fillStyle = NAVY; rr(ctx, 40, by, W - 80, 76, 14); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.textAlign = "center";
+    ajustar(ctx, bandaTxt, W - 140, 800, 36, 22); ctx.fillText(bandaTxt, W / 2, by + 50);
+    var footH = 250, cardY = by + 76 + 22, cardH = H - footH - 24 - cardY - 18, cardX = 40, cardW = W - 80;
+    ctx.fillStyle = "#fff"; rr(ctx, cardX, cardY, cardW, cardH, 18); ctx.fill();
+    return { cardX: cardX, cardY: cardY, cardW: cardW, cardH: cardH, footY: H - footH - 24, footH: footH };
+  }
+  function pie(ctx, W, m, linea1, cta) {
+    var fy = m.footY;
+    ctx.fillStyle = NAVY; rr(ctx, 40, fy, W - 80, m.footH, 18); ctx.fill();
+    ctx.textBaseline = "alphabetic"; ctx.textAlign = "center"; ctx.fillStyle = "#fff";
+    ajustar(ctx, linea1, W - 140, 700, 30, 18); ctx.fillText(linea1, W / 2, fy + 52);
+    ctx.fillStyle = "#cbd5f5"; var lin2 = "Todas las categorías y el fixture: " + WEB_CORTA;
+    ajustar(ctx, lin2, W - 120, 500, 25, 15); ctx.fillText(lin2, W / 2, fy + 98);
+    ctx.fillStyle = GOLD1; ajustar(ctx, cta, W - 120, 800, 32, 18); ctx.fillText(cta, W / 2, fy + 160);
+    ctx.fillStyle = "#fff"; ajustar(ctx, CUENTA_IG, W - 120, 700, 30, 18); ctx.fillText(CUENTA_IG, W / 2, fy + 208);
+  }
+  function plural(n, a, b) { return n + " " + (n === 1 ? a : b); }
+
   function dibujar() {
     var miId = ++dibujoId;
     var l = ligaActual(), s = serieActual();
     if (!l || !s) return;
+    var modo = $("s-tipo").value;
+    $("bloque-fecha").style.display = modo === "resultados" ? "" : "none";
+    $("bloque-filas").style.display = modo === "resultados" ? "none" : "";
+    // resultados necesita una categoría concreta
+    if (modo === "resultados" && selCat.value === "general" && s.categorias && s.categorias.length) selCat.value = s.categorias[0].id;
     armarEstado();
+    if (modo === "resultados") dibujarResultados(miId, l, s); else dibujarTabla(miId, l, s);
+  }
+
+  // ---------------- Tabla de posiciones ----------------
+  function dibujarTabla(miId, l, s) {
     var idCat = selCat.value, torneo = efTorneo(s, selTorneo.value);
     var filasSel = parseInt($("s-filas").value, 10);
     var H = parseInt($("s-formato").value, 10), W = 1080;
@@ -394,55 +525,26 @@
     var st = estadoDe(s, idCat, torneo), sf = semaforo(st);
     var hayQuita = tabla.some(function (r) { return r.ptsInf < 0; });
 
-    // estado + textos
     var e = $("estado-actual");
     e.className = sf.cls;
     e.textContent = st.cargados === 0
       ? "Sin resultados cargados todavía en esta categoría. No conviene publicarla."
-      : sf.txt + ": datos hasta la fecha " + st.ultima + (st.faltan ? " · faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") : " · no falta ninguno");
+      : sf.txt + ": datos hasta la " + textoUltima(s, st.ultima, torneo) + (st.faltan ? " · faltan " + plural(st.faltan, "resultado", "resultados") : " · no falta ninguno");
 
     var mostrar = filasSel > 0 ? tabla.slice(0, filasSel) : tabla;
     var nombreCat = idCat === "general" ? "TABLA GENERAL" : "CATEGORÍA " + idCat;
     var nombreTorneo = s.torneoUnico ? "" : (torneo === "apertura" ? " · APERTURA" : torneo === "clausura" ? " · CLAUSURA" : " · TABLA ANUAL");
     var bandaTxt = nombreCat + nombreTorneo + (temporada !== actual ? " · " + temporada : "");
 
-    // Cargar imágenes antes de dibujar
     var promesas = [img("perfil_babyfutbol.jpg")].concat(mostrar.map(function (r) { return img(ESC[r.nombre]); }));
-    var fontsListas = (document.fonts && document.fonts.load) ? Promise.all([document.fonts.load("800 40px Montserrat"), document.fonts.load("700 40px Montserrat"), document.fonts.load("500 40px Montserrat")]).catch(function () {}) : Promise.resolve();
-
-    Promise.all([fontsListas].concat(promesas)).then(function (res) {
-      if (miId !== dibujoId) return; // llegó una selección más nueva
+    Promise.all([fuentesListas()].concat(promesas)).then(function (res) {
+      if (miId !== dibujoId) return;
       var logo = res[1], escudos = res.slice(2);
       var cv = $("lienzo"); cv.width = W; cv.height = H;
       var ctx = cv.getContext("2d");
+      var m = marco(ctx, W, H, l, s, logo, bandaTxt);
+      var cardX = m.cardX, cardY = m.cardY, cardW = m.cardW, cardH = m.cardH;
 
-      // Fondo
-      var g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, GOLD1); g.addColorStop(1, GOLD2);
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-
-      // Cabecera
-      if (logo) {
-        ctx.save(); ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.closePath(); ctx.clip();
-        ctx.fillStyle = "#fff"; ctx.fillRect(50, 55, 140, 140); encajar(ctx, logo, 50, 55, 140, 140); ctx.restore();
-        ctx.lineWidth = 5; ctx.strokeStyle = NAVY; ctx.beginPath(); ctx.arc(120, 125, 70, 0, Math.PI * 2); ctx.stroke();
-      }
-      ctx.fillStyle = NAVY; ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
-      fuente(ctx, 700, 26); ctx.fillText("BABY FÚTBOL AL DÍA", 220, 90);
-      var tp = ajustar(ctx, l.nombre.toUpperCase(), 820, 800, 60, 34); ctx.fillText(l.nombre.toUpperCase(), 220, 90 + 8 + tp);
-      var ty = 90 + 8 + tp + 14;
-      var ts = ajustar(ctx, s.nombre, 820, 700, 32, 20); ctx.fillText(s.nombre, 220, ty + ts);
-
-      // Banda de categoría
-      var by = 235;
-      ctx.fillStyle = NAVY; rr(ctx, 40, by, W - 80, 76, 14); ctx.fill();
-      ctx.fillStyle = "#fff"; ctx.textAlign = "center";
-      ajustar(ctx, bandaTxt, W - 140, 800, 36, 22); ctx.fillText(bandaTxt, W / 2, by + 50);
-
-      // Tarjeta de tabla
-      var footH = 250, cardY = by + 76 + 22, cardH = H - footH - 24 - cardY - 18, cardX = 40, cardW = W - 80;
-      ctx.fillStyle = "#fff"; rr(ctx, cardX, cardY, cardW, cardH, 18); ctx.fill();
-
-      // Encabezado de columnas
       var hy = cardY + 14, hh = 56;
       ctx.fillStyle = "#e8edf8"; rr(ctx, cardX + 14, hy, cardW - 28, hh, 10); ctx.fill();
       var cols = ["PTS", "PJ", "PG", "PE", "PP", "DIF"], cw = 86, xDer = cardX + cardW - 28;
@@ -451,7 +553,6 @@
       cols.forEach(function (c, i) { ctx.fillText(c, xCols[i], hy + 37); });
       ctx.textAlign = "left"; ctx.fillText("#", cardX + 34, hy + 37); ctx.fillText("CLUB", cardX + 100, hy + 37);
 
-      // Filas
       var notaH = 44, ry = hy + hh + 8, disp = cardY + cardH - notaH - ry;
       var rowH = Math.min(100, Math.floor(disp / Math.max(mostrar.length, 1)));
       var tam = Math.round(rowH * 0.62);
@@ -477,41 +578,129 @@
         });
       });
 
-      // Nota bajo la tabla
       var notas = [];
       if (filasSel > 0 && tabla.length > mostrar.length) notas.push("Top " + mostrar.length + " de " + tabla.length + " clubes");
       if (hayQuita) notas.push("* incluye quita de puntos");
       ctx.textBaseline = "alphabetic"; ctx.textAlign = "center"; ctx.fillStyle = "#64748b"; fuente(ctx, 500, 22);
       ctx.fillText(notas.join("  ·  "), W / 2, cardY + cardH - 16);
 
-      // Pie
-      var fy = H - footH - 24;
-      ctx.fillStyle = NAVY; rr(ctx, 40, fy, W - 80, footH, 18); ctx.fill();
-      ctx.fillStyle = "#fff"; ctx.textAlign = "center";
       var act = l.ultimaActualizacion ? "  ·  Act. " + l.ultimaActualizacion : "";
-      var linea1 = st.ultima ? "Datos cargados hasta la fecha " + st.ultima + act : "Sin resultados cargados" + act;
-      ajustar(ctx, linea1, W - 140, 700, 30, 18); ctx.fillText(linea1, W / 2, fy + 52);
-      ctx.fillStyle = "#cbd5f5"; var lin2 = "Todas las categorías y el fixture: " + WEB_CORTA;
-      ajustar(ctx, lin2, W - 120, 500, 25, 15); ctx.fillText(lin2, W / 2, fy + 98);
-      ctx.fillStyle = GOLD1;
+      var linea1 = st.ultima ? "Datos cargados hasta la " + textoUltima(s, st.ultima, torneo) + act : "Sin resultados cargados" + act;
       var cta = ($("c-aviso").checked && st.faltan > 0)
-        ? "Faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") + ". ¿Los tenés? ¡Mandalos por DM!"
+        ? "Faltan " + plural(st.faltan, "resultado", "resultados") + ". ¿Los tenés? ¡Mandalos por DM!"
         : "¿Tenés un resultado o ves un error? ¡Mandanos un DM!";
-      ajustar(ctx, cta, W - 120, 800, 32, 18); ctx.fillText(cta, W / 2, fy + 160);
-      ctx.fillStyle = "#fff"; ajustar(ctx, CUENTA_IG, W - 120, 700, 30, 18); ctx.fillText(CUENTA_IG, W / 2, fy + 208);
+      pie(ctx, W, m, linea1, cta);
 
-      armarTextos(l, s, idCat, torneo, st);
+      armarTextos(l, s, idCat, torneo, { modo: "tabla", ultima: st.ultima, ultimaTxt: textoUltima(s, st.ultima, torneo), faltan: st.faltan });
     });
   }
 
-  function armarTextos(l, s, idCat, torneo, st) {
-    var catTxt = idCat === "general" ? "tabla general" : "categoría " + idCat;
-    var torneoTxt = s.torneoUnico ? "" : (torneo === "apertura" ? " · Apertura" : torneo === "clausura" ? " · Clausura" : " · Tabla Anual");
-    var txt = "📊 " + l.nombre + " · " + s.nombre + "\n" +
-      "Posiciones " + catTxt + torneoTxt + (temporada !== actual ? " (temporada " + temporada + ")" : "") + "\n" +
-      (st.ultima ? "Datos hasta la fecha " + st.ultima + ".\n" : "") + "\n" +
-      "👉 Tabla completa, fixture y las demás categorías: link en la bio.\n";
-    if ($("c-aviso").checked && st.faltan > 0) txt += "\n⚠️ Nos faltan " + st.faltan + " resultado" + (st.faltan === 1 ? "" : "s") + ". ¿Los tenés? Mandalos por DM y los cargamos.\n";
+  // ---------------- Resultados de la fecha ----------------
+  function dibujarResultados(miId, l, s) {
+    var e = $("estado-actual");
+    var cat = (s.categorias || []).find(function (c) { return c.id === selCat.value; });
+    if (!cat) {
+      e.className = "gris"; e.textContent = "Esta serie no tiene categorías cargadas: no hay resultados para mostrar."; return;
+    }
+    var torneo = efTorneo(s, selTorneo.value), H = parseInt($("s-formato").value, 10), W = 1080;
+    actualizarFechas(l, s, cat, torneo);
+    var numF = parseInt($("s-fecha").value, 10);
+    var fechaEt = "Fecha " + numVista(s, numF) + (esClausura(s, numF) ? " Clausura" : "");
+    var fechaObj = fechasDe(s, cat, torneo).find(function (f) { return f.num === numF; });
+    if (!fechaObj) { e.className = "gris"; e.textContent = "No hay fechas cargadas en esta categoría."; return; }
+
+    var c = conteoFecha(s, fechaObj), sf = semaforo({ cargados: c.cargados, faltan: c.faltan });
+    e.className = c.cargados === 0 ? "gris" : sf.cls;
+    e.textContent = c.cargados === 0
+      ? fechaEt + ": todavía no tiene resultados cargados."
+      : fechaEt + ": " + c.cargados + " de " + c.total + " resultados cargados" + (c.faltan ? " · faltan " + c.faltan : " · completa");
+
+    var nombreTorneo = s.torneoUnico ? "" : (torneo === "apertura" ? " · APERTURA" : torneo === "clausura" ? " · CLAUSURA" : "");
+    var bandaTxt = "CATEGORÍA " + cat.id + " · FECHA " + numVista(s, numF) + (esClausura(s, numF) ? " · CLAUSURA" : (torneo === "apertura" && !s.torneoUnico ? " · APERTURA" : "")) + (temporada !== actual ? " · " + temporada : "");
+    var nombres = []; c.reales.forEach(function (p) { nombres.push(p.local, p.visitante); });
+    var promesas = [img("perfil_babyfutbol.jpg")].concat(nombres.map(function (n) { return img(ESC[n]); }));
+
+    Promise.all([fuentesListas()].concat(promesas)).then(function (res) {
+      if (miId !== dibujoId) return;
+      var logo = res[1], escudos = res.slice(2);
+      var cv = $("lienzo"); cv.width = W; cv.height = H;
+      var ctx = cv.getContext("2d");
+      var m = marco(ctx, W, H, l, s, logo, bandaTxt);
+      var cardX = m.cardX, cardY = m.cardY, cardW = m.cardW, cardH = m.cardH;
+
+      var notaH = 52, ry = cardY + 16, disp = cardY + cardH - notaH - ry, n = c.reales.length;
+      if (n === 0) {
+        ctx.fillStyle = "#64748b"; ctx.textAlign = "center"; ctx.textBaseline = "middle"; fuente(ctx, 700, 32);
+        ctx.fillText("Esta fecha todavía no tiene partidos cargados", W / 2, cardY + cardH / 2);
+      }
+      var rowH = Math.min(118, Math.floor(disp / Math.max(n, 1)));
+      var tam = Math.min(84, Math.round(rowH * 0.64)), scoreW = 200, scoreH = Math.round(rowH * 0.62);
+      var pad = 34, centro = W / 2;
+      var xEscL = cardX + pad, xNomL = xEscL + tam + 16, maxNomL = centro - scoreW / 2 - 18 - xNomL;
+      var xEscR = cardX + cardW - pad - tam, xNomR = xEscR - 16, maxNomR = xNomR - (centro + scoreW / 2 + 18);
+
+      c.reales.forEach(function (p, i) {
+        var y = ry + i * rowH, cy = y + rowH / 2;
+        if (i % 2 === 0) { ctx.fillStyle = "#f4f6fb"; rr(ctx, cardX + 14, y + 2, cardW - 28, rowH - 4, 12); ctx.fill(); }
+        var tiene = tieneRes(p), gana = tiene ? (p.gl > p.gv ? "l" : p.gl < p.gv ? "v" : "") : "";
+
+        // escudos
+        [[escudos[i * 2], xEscL], [escudos[i * 2 + 1], xEscR]].forEach(function (par) {
+          if (par[0]) encajar(ctx, par[0], par[1], cy - tam / 2, tam, tam);
+          else { ctx.fillStyle = "#cbd5e1"; ctx.beginPath(); ctx.arc(par[1] + tam / 2, cy, tam / 2.4, 0, Math.PI * 2); ctx.fill(); }
+        });
+
+        // nombres
+        var px = Math.round(rowH * 0.27);
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = "#111827"; ctx.textAlign = "left";
+        ajustar(ctx, p.local, maxNomL, gana === "l" ? 800 : 600, px, 14); ctx.fillText(p.local, xNomL, cy + 1);
+        ctx.textAlign = "right";
+        ajustar(ctx, p.visitante, maxNomR, gana === "v" ? 800 : 600, px, 14); ctx.fillText(p.visitante, xNomR, cy + 1);
+
+        // marcador
+        ctx.fillStyle = tiene ? NAVY : "#e2e8f0"; rr(ctx, centro - scoreW / 2, cy - scoreH / 2, scoreW, scoreH, 14); ctx.fill();
+        ctx.textAlign = "center"; ctx.fillStyle = tiene ? "#fff" : "#64748b";
+        fuente(ctx, 800, Math.round(scoreH * (tiene ? 0.62 : 0.5)));
+        ctx.fillText(tiene ? p.gl + " - " + p.gv : "vs", centro, cy + 2);
+      });
+
+      // notas
+      var notas = [];
+      if (c.libres.length) notas.push("Libre: " + c.libres.join(", "));
+      if (c.faltan > 0) notas.push("vs = resultado pendiente");
+      ctx.textBaseline = "alphabetic"; ctx.textAlign = "center"; ctx.fillStyle = "#64748b";
+      var textoNota = notas.join("  ·  ");
+      ajustar(ctx, textoNota, cardW - 60, 500, 24, 14); ctx.fillText(textoNota, W / 2, cardY + cardH - 18);
+
+      var act = l.ultimaActualizacion ? "  ·  Act. " + l.ultimaActualizacion : "";
+      var linea1 = fechaEt + "  ·  " + c.cargados + " de " + c.total + " resultados" + act;
+      var cta = ($("c-aviso").checked && c.faltan > 0)
+        ? "Faltan " + plural(c.faltan, "resultado", "resultados") + " de esta fecha. ¿Los tenés? ¡Mandalos por DM!"
+        : "¿Tenés un resultado o ves un error? ¡Mandanos un DM!";
+      pie(ctx, W, m, linea1, cta);
+
+      armarTextos(l, s, cat.id, torneo, { modo: "resultados", fecha: numVista(s, numF), clausura: esClausura(s, numF), total: c.total, cargados: c.cargados, faltan: c.faltan, libres: c.libres });
+    });
+  }
+
+  function armarTextos(l, s, idCat, torneo, info) {
+    var torneoTxt = s.torneoUnico ? "" : (torneo === "apertura" ? " · Apertura" : torneo === "clausura" ? " · Clausura" : (info.modo === "tabla" ? " · Tabla Anual" : ""));
+    var tempTxt = temporada !== actual ? " (temporada " + temporada + ")" : "";
+    var txt;
+    if (info.modo === "resultados") {
+      txt = "⚽ Resultados · " + l.nombre + " · " + s.nombre + "\n" +
+        "Categoría " + idCat + " · Fecha " + info.fecha + (info.clausura ? " Clausura" : torneoTxt) + tempTxt + "\n";
+      if (info.libres && info.libres.length) txt += "Libre: " + info.libres.join(", ") + "\n";
+      txt += "\n👉 Tabla de posiciones, fixture y las demás categorías: link en la bio.\n";
+    } else {
+      var catTxt = idCat === "general" ? "tabla general" : "categoría " + idCat;
+      txt = "📊 " + l.nombre + " · " + s.nombre + "\n" +
+        "Posiciones " + catTxt + torneoTxt + tempTxt + "\n" +
+        (info.ultima ? "Datos hasta la " + info.ultimaTxt + ".\n" : "") + "\n" +
+        "👉 Tabla completa, fixture y las demás categorías: link en la bio.\n";
+    }
+    if ($("c-aviso").checked && info.faltan > 0) txt += "\n⚠️ Nos " + (info.faltan === 1 ? "falta " : "faltan ") + plural(info.faltan, "resultado", "resultados") + (info.modo === "resultados" ? " de esta fecha" : "") + ". ¿Los tenés? Mandalos por DM y los cargamos.\n";
     else txt += "\n¿Tenés un resultado o ves un error? Escribinos por DM.\n";
     txt += "\n#BabyFutbol #FutbolInfantil #Uruguay #ONFI";
     $("caption").value = txt;
@@ -531,13 +720,28 @@
   function slug(t) { return String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
   function descargar() {
     var l = ligaActual(), s = serieActual(); if (!l || !s) return;
-    var st = estadoDe(s, selCat.value, efTorneo(s, selTorneo.value));
-    if (st.cargados === 0) {
-      if (!confirm("Esta categoría no tiene resultados cargados: la tabla sale en cero.\n¿Descargar igual?")) return;
-    } else if (st.faltan > 3) {
-      if (!confirm("Ojo: faltan " + st.faltan + " resultados en esta categoría, así que la tabla puede no reflejar la realidad.\n¿Descargar igual?")) return;
+    var modo = $("s-tipo").value, torneo = efTorneo(s, selTorneo.value), sufijo;
+    if (modo === "resultados") {
+      var cat = (s.categorias || []).find(function (c) { return c.id === selCat.value; });
+      var fo = cat ? fechasDe(s, cat, torneo).find(function (f) { return f.num === parseInt($("s-fecha").value, 10); }) : null;
+      if (!fo) { alert("No hay una fecha elegida para descargar."); return; }
+      var c = conteoFecha(s, fo);
+      if (c.cargados === 0) {
+        if (!confirm("Esta fecha no tiene resultados cargados: todos los partidos salen como pendientes.\n¿Descargar igual?")) return;
+      } else if (c.faltan > 3) {
+        if (!confirm("Ojo: faltan " + c.faltan + " resultados de esta fecha.\n¿Descargar igual?")) return;
+      }
+      sufijo = "resultados-" + (esClausura(s, fo.num) ? "clausura-f" : "f") + numVista(s, fo.num);
+    } else {
+      var st = estadoDe(s, selCat.value, torneo);
+      if (st.cargados === 0) {
+        if (!confirm("Esta categoría no tiene resultados cargados: la tabla sale en cero.\n¿Descargar igual?")) return;
+      } else if (st.faltan > 3) {
+        if (!confirm("Ojo: faltan " + st.faltan + " resultados en esta categoría, así que la tabla puede no reflejar la realidad.\n¿Descargar igual?")) return;
+      }
+      sufijo = torneo === "clausura" ? "tabla-clausura-f" + numVista(s, st.ultima) : "tabla-f" + st.ultima;
     }
-    var nombre = [slug(l.id), slug(s.id), slug(selCat.value), "f" + st.ultima, temporada].join("_") + ".png";
+    var nombre = [slug(l.id), slug(s.id), slug(selCat.value), sufijo, temporada].join("_") + ".png";
     try {
       $("lienzo").toBlob(function (blob) {
         if (!blob) { alert("No se pudo generar la imagen. Abrí la página desde Live Server."); return; }

@@ -391,7 +391,14 @@ const ZONA_8_DB = {
           id: "inicial-b",
           nombre: "Torneo Inicial - Grupo B",
           torneoUnico: true, // sin Apertura/Clausura
-          clubes: ["Malvín Alto", "Las Flores", "San Francisco", "3 de Abril", "Yegros", "Ombú Jrs."],
+          clubes: [
+            "Malvín Alto", 
+            "Las Flores", 
+            "San Francisco", 
+            "3 de Abril", 
+            "Yegros", 
+            "Ombú Jrs."
+          ],
           categorias: [
             {
               id: "2019",

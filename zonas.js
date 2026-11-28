@@ -160,5 +160,7 @@ window.ZONAS = [
     datos: "data/fixture_y_resultados/{temporada}/zona-8.js",
     escudos: "data/zona-8-escudos.js",
     variable: "ZONA_8_DB",
+    torneos: "data/fixture_y_resultados/{temporada}/torneos-zona-8.js",
+    variableTorneos: "TORNEOS_ZONA_8",
   },
 ];

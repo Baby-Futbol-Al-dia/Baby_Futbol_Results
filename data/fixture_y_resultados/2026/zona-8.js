@@ -3404,8 +3404,8 @@ const ZONA_8_DB = {
                     {
                       local: "Galácticos",
                       visitante: "La Lata",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 1,
                     },
                     {
                       local: "Primavera",
@@ -3433,8 +3433,8 @@ const ZONA_8_DB = {
                     {
                       local: "Málaga",
                       visitante: "La Lata",
-                      gl: null,
-                      gv: null,
+                      gl: 0,
+                      gv: 3,
                     },
                     {
                       local: "Montevideo Belgrano",
@@ -3474,8 +3474,8 @@ const ZONA_8_DB = {
                     {
                       local: "La Lata",
                       visitante: "San Martín Bonomi",
-                      gl: null,
-                      gv: null,
+                      gl: 3,
+                      gv: 1,
                     },
                     {
                       local: "Montevideo Belgrano",
@@ -3501,10 +3501,10 @@ const ZONA_8_DB = {
                   num: 6,
                   partidos: [
                     {
-                      local: "La Lata",
-                      visitante: "Flores Palmas",
-                      gl: null,
-                      gv: null,
+                      local: "Flores Palmas",
+                      visitante: "La Lata",
+                      gl: 1,
+                      gv: 4,
                     },
                     {
                       local: "Tacuarembó Jrs.",
@@ -3532,8 +3532,8 @@ const ZONA_8_DB = {
                     {
                       local: "Fénix",
                       visitante: "La Lata",
-                      gl: null,
-                      gv: null,
+                      gl: 1,
+                      gv: 5,
                     },
                     {
                       local: "Montevideo Belgrano",
@@ -3561,8 +3561,8 @@ const ZONA_8_DB = {
                     {
                       local: "La Lata",
                       visitante: "Montevideo Belgrano",
-                      gl: null,
-                      gv: null,
+                      gl: 8,
+                      gv: 1,
                     },
                     {
                       local: "Flores Palmas",
@@ -3590,8 +3590,8 @@ const ZONA_8_DB = {
                     {
                       local: "Potencia",
                       visitante: "La Lata",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 4,
                     },
                     {
                       local: "Montevideo Belgrano",
@@ -3613,8 +3613,8 @@ const ZONA_8_DB = {
                     {
                       local: "La Lata",
                       visitante: "Celtic Jrs.",
-                      gl: null,
-                      gv: null,
+                      gl: 4,
+                      gv: 0,
                     },
                     {
                       local: "Málaga",
@@ -3639,7 +3639,14 @@ const ZONA_8_DB = {
                 {
                   num: 11,
                   partidos: [
+                     {
+                      local: "La Lata",
+                      visitante: "Fecha libre",
+                      gl: null,
+                      gv: null
+                     },
                     {
+
                       local: "Celtic Jrs.",
                       visitante: "",
                       gl: null,
@@ -3688,8 +3695,8 @@ const ZONA_8_DB = {
                     {
                       local: "Tacuarembó Jrs.",
                       visitante: "La Lata",
-                      gl: null,
-                      gv: null,
+                      gl: 2,
+                      gv: 4,
                     },
                     {
                       local: "Montevideo Belgrano",
@@ -15996,8 +16003,8 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
-                    { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
-                    { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Pesca", visitante: "Cerro Jrs", gl: 0, gv: 2 },
+                    { local: "Papotes", visitante: "Los Magos", gl: 3, gv: 2 },
                   ],
                 },
                 {
@@ -16166,7 +16173,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
-                    { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Pesca", visitante: "Cerro Jrs", gl: 0, gv: 2 },
                     { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
                   ],
                 },
@@ -16336,7 +16343,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
-                    { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Pesca", visitante: "Cerro Jrs", gl: 0, gv: 1 },
                     { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
                   ],
                 },
@@ -16506,7 +16513,7 @@ const ZONA_8_DB = {
                   partidos: [
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
-                    { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
+                    { local: "Pesca", visitante: "Cerro Jrs", gl: 0, gv: 7 },
                     { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
                   ],
                 },
@@ -16847,7 +16854,7 @@ const ZONA_8_DB = {
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
                     { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
-                    { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Papotes", visitante: "Los Magos", gl: 0, gv: 2 },
                   ],
                 },
                 {
@@ -17527,7 +17534,7 @@ const ZONA_8_DB = {
                     { local: "Beco", visitante: "Brandi", gl: null, gv: null },
                     { local: "Tigre", visitante: "Los Bulevares", gl: null, gv: null },
                     { local: "Pesca", visitante: "Cerro Jrs", gl: null, gv: null },
-                    { local: "Papotes", visitante: "Los Magos", gl: null, gv: null },
+                    { local: "Papotes", visitante: "Los Magos", gl: 1, gv: 2 },
                   ],
                 },
                 {
